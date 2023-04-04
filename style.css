@@ -11,7 +11,12 @@ main {
 
 body {
     background-color: #f3dbcf;
-    color: #D87F81
+    color: #D87F81;
+    font-family: monospace;
+}
+
+.form-rounded {
+border-radius: 1rem;
 }
 
 .containerPage {
@@ -125,6 +130,7 @@ a:hover {
 a {
     color: #D87F81 !important;
     text-decoration: none;
+    font-family: monospace;
 }
 
 img {
@@ -186,4 +192,24 @@ hr {
     border: outset;
     color: white;
     padding: 1px 10px;
+}
+
+nav {
+    background-color: #f3dbcf;
+}
+
+label {
+    font-family: monospace;
+    font-size: large;
+}
+
+.nav-link {
+    color: #f3dbcf !important;
+    line-height: 3;
+    font-size: x-large;
+}
+
+.navbar-brand {
+    color: #f3dbcf !important;
+    font-size: xx-large;
 }
