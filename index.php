@@ -172,52 +172,6 @@
         </div>
 
     </main>
-
-    <!-- modal (carrinho de compras) -->
-    <div class="modal fade" id="carrinho_de_compras" tabindex="-1" aria-labelledby="modalCarrinho" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="modalCarrinho">Carrinho de compras</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <!-- <div class="container"> -->
-                    <div class="d-flex align-items-center">
-                        <!-- <div class="card_carrinho" style="width: 18rem;"> -->
-                        <div class="col text-center">
-                            <img src="./assets/1.png" class="img_carrinho" alt="ProdutoX">
-                        </div>
-                        <div class="col text-center">
-                            <p>Produto 198232</p>
-                        </div>
-                        <div class="col text-center">
-                            <div class="d-flex align-items-center">
-                                <div class="col text-center" style="padding: 0px;">
-                                    <button class="btn_less">-</button>
-                                </div>
-                                <div class="col text-center" style="padding: 0px;">
-                                    <input class="form-control form-control-sm" type="text"
-                                        placeholder=".form-control-sm" aria-label=".form-control-sm example"
-                                        style="width: 10%;">
-                                </div>
-                                <div class="col text-center" style="padding: 0px;">
-                                    <button class="btn_plus">+</button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- </div> -->
-                    </div>
-                    <!-- </div> -->
-                </div>
-
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn_cancel" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn_send">Comprar</button>
-            </div>
-        </div>
-    </div>
     </div>
 </body>
 

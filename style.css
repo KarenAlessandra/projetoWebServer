@@ -73,23 +73,10 @@ border-radius: 1rem;
     font-family: monospace;
     text-decoration: none;
     text-align: center;
-    /* height: 50px; */
     line-height: 200px;
     color: #D87F81;
-    /* cursor: pointer;
-    display: inline-block; */
+    /* display: inline-block;  */
 }
-
-/* 
-.btn_title {
-    border: none;
-    background-color: inherit;
-    font-size: 48px;
-    font-family: monospace;
-    text-decoration: none;
-    color: #ae6378;
-    align-self: end;
-} */
 
 .btn_icon {
     border: none;
