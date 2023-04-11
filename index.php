@@ -3,6 +3,9 @@
 <!doctype html>
 <html lang="en">
 
+<?php
+?>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -41,15 +44,26 @@
         <div class="container0">
             <div class="row">
                 <div class="d-flex flex-row-reverse">
-                    <a href="#deslogar" class="btn_icon"><i class="fa fa-sign-out" alt="Deslogar"></i></a>
-                    <a href="./login.html" class="btn_icon"><i class="fa fa-user" alt="Logar"></i></a>
-                    &nbsp; &nbsp; &nbsp;
-                    <button type="#cart" class="btn_carrinho" data-bs-toggle="modal" alt="Carrinho de Compras"
-                        data-bs-target="#carrinho_de_compras">
-                        <span class="fa fa-shopping-cart" aria-hidden="true"></span>
-                    </button>
+                    <a href="./login.html" class="btn_icon"><i class="fa fa-user"></i></a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item">
+                            <a href="#perfil" class="btn_icon"><i class="fa fa-user"></i></a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="#cadastrarBolo" class="btn_icon"><i class="fa fa-birthday-cake"></i></a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="#deslogar" class="btn_icon"><i class="fa fa-sign-out"></i></a>
+                        </li>
+                    </ul>
                 </div>
+                &nbsp; &nbsp; &nbsp;
+                <!-- <button type="#cart" class="btn_carrinho" data-bs-toggle="modal"
+                    data-bs-target="#carrinho_de_compras">
+                    <span class="fa fa-shopping-cart" aria-hidden="true"></span>
+                </button> -->
             </div>
+        </div>
         </div>
 
         <div class="containerPage">
@@ -57,10 +71,10 @@
             <div class="container1">
                 <div class="row row-cols-5 text-center">
                     <a href="./" class="btn_header">Home</a>
-                    <a href="./produtos.html" class="btn_header" alt="Página de Produtos">Produtos</a>
-                    <img src="./assets/logo.png" alt="logo Cake Shop"></img>
-                    <a href="./quemsomos.html" class="btn_header" alt="Página Sobre nós">Quem Somos</a>
-                    <a href="./contato.html" class="btn_header" alt="Página de Contato">Contato</a>
+                    <a href="./produtos.html" class="btn_header">Produtos</a>
+                    <img src="./assets/logo.png"></img>
+                    <a href="./quemsomos.html" class="btn_header">Quem Somos</a>
+                    <a href="./contato.html" class="btn_header">Contato</a>
                 </div>
             </div>
             <hr />
@@ -68,33 +82,30 @@
             <!-- Home -->
             <br />
             <!-- <marquee scrollamount="30">
-                <h1 class="h1_title text-center" style="color: #d87f81;" alt="Texto passando de um lado ao outro">Bem
+                <h1 class="h1_title text-center" style="color: #d87f81;">Bem
                     vindo a maior loja de bolos da região! &nbsp;&nbsp;&nbsp;</h1>
             </marquee> -->
             <br /><br />
             <div id="carousel" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="d-block w-100" src="./assets/1.jpg" alt="bolo bonito" style="height: 20rem;">
+                        <img class="d-block w-100" src="./assets/1.jpg">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="./assets/2.jpg" style="height: 20rem;"
-                            alt="bolo com uma cereja">
+                        <img class="d-block w-100" src="./assets/2.jpg">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="./assets/3.jpg" style="height: 20rem;" alt="bolo com recheio">
+                        <img class="d-block w-100" src="./assets/3.jpg">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="./assets/4.jpg" style="height: 20rem;" alt="bolo com cobertura">
+                        <img class="d-block w-100" src="./assets/4.jpg">
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev"
-                    alt="botão de voltar no carrocel de imagens">
+                <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
                 </a>
-                <a class="carousel-control-next" href="#carousel" role="button" data-slide="next"
-                    alt="botão de avançar no carrocel de imagens">
+                <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                 </a>
@@ -102,8 +113,7 @@
             <br /><br />
             <!-- jumbotron -->
 
-            <div class="jumbotron jumbotron-fluid"
-                style="color: #d87f81; font-size: 20px; background-color: #2D3C33; padding-left: 5rem">
+            <div class="jumbotron1 jumbotron-fluid">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col align-items-center">
@@ -111,8 +121,7 @@
                                 bolo ao lado:</p>
                         </div>
                         <div class="col text-center">
-                            <a href="./produtos.html"><i class="fa fa-birthday-cake" style="font-size: 10rem;"
-                                    alt="icone botão de bolo"></i></a>
+                            <a href="./produtos.html"><i class="fa fa-birthday-cake" style="font-size: 10rem;"></i></a>
                         </div>
                     </div>
                 </div>
@@ -122,12 +131,11 @@
             <!-- cards with pictures -->
 
             <div class="card-group">
-                <div class="card text-align" style="border-style: dashed; border-right: none; border-color: #f3dbcf;">
+                <div class="card">
                     <br>
-                    <h5 class="card-title text-center" style="font-size:20px; color: #f3dbcf;">Card title</h5>
+                    <h5 class="card-title text-center">Card title</h5>
                     <br>
-                    <img class="card-img-top" src="./assets/8.jpg" alt="um bolo, doces e salgados"
-                        style="height: 25rem;">
+                    <img class="card-img-top" src="./assets/8.jpg">
                     <div class="card-body text-align" style="color:#f3dbcf">
                         <p class="card-text" style="font-size: 15px;">Cupcake ipsum dolor sit amet macaroon jujubes.
                             Sweet wafer liquorice liquorice sweet roll jelly-o bear claw. Halvah cake donut cake brownie
@@ -137,9 +145,9 @@
                 <div class="card"
                     style="border-style: dashed; border-left: none; border-right: none; border-color: #f3dbcf;">
                     <br>
-                    <h5 class="card-title text-center" style="font-size:20px; color: #f3dbcf;">Card title</h5>
+                    <h5 class="card-title text-center">Card title</h5>
                     <br>
-                    <img class="card-img-top" src="./assets/7.jpg" alt="confeitos" style="height: 25rem;">
+                    <img class="card-img-top" src="./assets/7.jpg">
                     <div class="card-body" style="color:#f3dbcf">
                         <p class="card-text text-align" style="font-size: 15px;">Jelly-o dessert gingerbread cookie
                             icing. Carrot cake oat cake pastry gummies dragée I love. Tootsie roll caramels ice cream
@@ -149,10 +157,9 @@
                 </div>
                 <div class="card" style="border-style: dashed; border-left: none; border-color: #f3dbcf;">
                     <br>
-                    <h5 class="card-title text-center" style="font-size:20px; color: #f3dbcf;">Card title</h5>
+                    <h5 class="card-title text-center">Card title</h5>
                     <br>
-                    <img class="card-img-top" src="./assets/9.jpg" alt="mais bolo, doces e salgados"
-                        style="height: 25rem;">
+                    <img class="card-img-top" src="./assets/9.jpg">
                     <div class="card-body" style="color:#f3dbcf">
                         <p class="card-text text-align" style="font-size: 15px;">Tart topping tootsie roll pie ice cream
                             gummi bears donut. Cookie sweet pie jelly beans pie jelly beans biscuit jelly beans
@@ -165,9 +172,9 @@
 
         <!-- footer -->
 
-        <div class="jumbotron jumbotron-fluid" style="color: #f3dbcf; background-color:#7e9680">
+        <div class="jumbotron2 jumbotron-fluid">
             <div class="container">
-                <img src="./assets/logo_footer.png" alt="logo Cake Shop"></img>
+                <img src="./assets/logo_footer.png"></img>
             </div>
         </div>
 

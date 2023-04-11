@@ -50,6 +50,22 @@ border-radius: 1rem;
     padding-right: 10rem;
 }
 
+.jumbotron1 {
+    color: #D87F81;
+    background-color: #2D3C33; 
+    padding: 2rem;
+    margin-bottom: 0;
+    font-size: 20px; 
+    padding-left: 5rem
+    /* background-color: #D87F81; */
+    /* color: #f3dbcf; */
+}
+
+.jumbotron2 {
+    color: #f3dbcf; 
+    background-color:#7e9680;
+}
+
 .btn_send {
     background-color: #7e9680;
     border: outset;
@@ -90,6 +106,7 @@ border-radius: 1rem;
 .h1_title {
     color: #ae6378;
     font-family: monospace;
+    padding-bottom: 2rem;
 }
 
 .card {
@@ -98,6 +115,11 @@ border-radius: 1rem;
     background-color: #D87F81;
     color: #ae6378;
     text-align: justify;
+    padding-top: 4rem; 
+    padding-left: 7rem; 
+    padding-right: 7rem; 
+    padding-bottom: 1rem; 
+    border-radius: 1%;
 }
 
 /* card da pagina produto */
@@ -107,6 +129,27 @@ border-radius: 1rem;
     height: auto;
     margin-bottom: 1rem;
     width: 8rem;
+}
+
+/* card do index */
+.card-group {
+    border-top-style: dashed;
+    border-right-style: dashed;
+    border-left-style: dashed;
+    border-bottom-style: dashed;
+    border-color: #f3dbcf;
+}
+
+.card-title {
+    color: #f3dbcf;
+    font-family: monospace;
+    font-size: 20px;
+}
+
+.card-image-top {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
 }
 
 a:hover {
@@ -199,4 +242,10 @@ label {
 .navbar-brand {
     color: #f3dbcf !important;
     font-size: xx-large;
+}
+
+.d-block { /*w-100*/
+    width: 100%;
+    /* height: 100%; */
+    height: 20rem;
 }
