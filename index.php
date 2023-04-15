@@ -68,7 +68,8 @@
             <!-- cards with pictures -->
 
             <div class="card-group">
-                <div class="card">
+                <div class="card"
+                    style="border-style: dashed; border-left: dashed; border-right: none; border-color: #f3dbcf;">
                     <br>
                     <h5 class="card-title text-center">Card title</h5>
                     <br>
