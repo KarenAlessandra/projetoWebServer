@@ -56,7 +56,7 @@ border-radius: 1rem;
     padding: 2rem;
     margin-bottom: 0;
     font-size: 20px; 
-    padding-left: 5rem
+    padding-left: 5rem;
     /* background-color: #D87F81; */
     /* color: #f3dbcf; */
 }
@@ -64,6 +64,9 @@ border-radius: 1rem;
 .jumbotron2 {
     color: #f3dbcf; 
     background-color:#7e9680;
+    height: 20rem;
+    margin-bottom: 2em;
+    padding-top: 2rem;
 }
 
 .btn_send {
@@ -115,10 +118,6 @@ border-radius: 1rem;
     background-color: #D87F81;
     color: #ae6378;
     text-align: justify;
-    padding-top: 4rem; 
-    padding-left: 7rem; 
-    padding-right: 7rem; 
-    padding-bottom: 1rem; 
     border-radius: 1%;
 }
 
@@ -133,10 +132,7 @@ border-radius: 1rem;
 
 /* card do index */
 .card-group {
-    border-top-style: dashed;
-    border-right-style: dashed;
-    border-left-style: dashed;
-    border-bottom-style: dashed;
+    border-style: dashed;   
     border-color: #f3dbcf;
 }
 

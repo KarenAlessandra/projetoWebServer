@@ -79,29 +79,29 @@
                     
                     <!-- e-mail, name and text fields -->
                     <form>
-                        <div>
+                        <div class="form-control" action="functions.php" method="get">
                             <label for="formFile" class="form-label">Insira a imagem do bolo</label>
                             <input class="form-control" type="file" id="formFile">
                         </div>
-                        <div class="form" action="functions.php" method="get">
+                        <div class="form" action="functions.php" method="post">
                             <input type="nameBolo" class="form-control form-rounded" id="form_name" placeholder="Título do Produto">
                         </div>
                         <br />
-                        <div class="form" action="functions.php" method="get">
+                        <div class="form" action="functions.php" method="post">
                             <label type="formImage" class="form-label">Valor em reais: </label>
                             <input type="price" class="form-control form-rounded" id="form_valor" placeholder="00,00">
                         </div>
                         <br />
-                        <div class="form" action="functions.php" method="get">
+                        <div class="form" action="functions.php" method="post">
                             <textarea type="description" class="form-control form-rounded" type="descriptionBolo" id="form_message" rows="4" placeholder="Digite a descrição do bolo"></textarea>
                         </div>
                         <br />
-                        <div class="form" action="functions.php" method="get">
+                        <div class="form" action="functions.php" method="post">
                             <input type="peso" class="form-control form-rounded" id="form_peso" placeholder="Peso em kg">
                         </div>
                         <br /><br />
                         <!-- button -->
-                        <button type="enviar" class="btn_send" style="margin-bottom: 2rem;">Cadastrar</button>
+                        <button type="submit" class="btn_send" style="margin-bottom: 2rem;">Cadastrar</button>
                         <br /><br />
                     </form>
                 </div>
