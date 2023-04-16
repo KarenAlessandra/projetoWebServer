@@ -3,7 +3,7 @@
 //contato com Loja
 function enviarContato($nome, $email, $telefone, $mensagem)
 {
-    if (isset($_GET)) {
+    if (isset($_POST)) {
         $name = $_POST['name'];
         $email = $_POST['email'];
         $phone = $_POST['phone'];

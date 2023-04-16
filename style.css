@@ -16,7 +16,7 @@ body {
 }
 
 .form-rounded {
-border-radius: 1rem;
+    border-radius: 1rem;
 }
 
 .containerPage {
@@ -37,7 +37,7 @@ border-radius: 1rem;
     background-color: #f3dbcf;
 }
 
- /* container dos cards */
+/* container dos cards */
 .container2 {
     background-color: #D87F81;
     padding: 3rem;
@@ -235,7 +235,7 @@ label {
 }
 
 .navbar-brand {
-    color: #f3dbcf !important;
+    color: #D87F81;
     font-size: xx-large;
 }
 

@@ -73,11 +73,10 @@
             <div class="container" style="background-color: #D87F81;">
                 <div class="container">
                     <div class="row align-items-start" >
-                        <div class="col-3">
+                        <div class="col-4">
                             <br />
                             <nav id="navbar-perfil" class="navbar navbar-light bg-light flex-column align-items-stretch" style="background-color: #D87F81 !important;">
-                            <a class="navbar-brand" href="#">Configurações</a>
-                            <nav class="nav nav-pills flex-column" style="background-color: #D87F81;;">
+                            <nav class="nav nav-pills flex-column" style="background-color: #2D3C33 !important;">
                                 <a class="nav-link" href="#item-1">Meus Dados</a>
                                 <a class="nav-link" href="#item-2">Meu Endereço</a>
                                 <a class="nav-link" href="#item-3">Excluir Conta</a>
@@ -89,96 +88,60 @@
                             <h4 id="item-1">Meus dados</h4>
                             <br />
                             <!-- profile -->
-                                <div class="form mb-3" action="functions.php" method="post"post>
-                                    <!-- <label for="" class="form-label">Name</label> -->
-                                    <input type="text" id="name" class="form-control form-rounded" placeholder="Nome Completo">
-                                </div>
+                            <form action="functions.php" method="post"post>
+                                <input type="text" id="name" class="form-control form-rounded" placeholder="Nome Completo">
+                                <br /><br />
+                                <input type="email" class="form-control form-rounded" id="email" placeholder="E-mail">
+                                <br /><br />
+                                <input type="text" class="form-control form-rounded" id="phone" placeholder="Telefone">
+                                <br /><br />
+                                <input type="text" class="form-control form-rounded" id="cpf" placeholder="CPF">
+                                <br /><br />
+                                <input type="password" class="form-control form-rounded" id="senha" placeholder="Senha"  aria-describedby="passwordHelpId">
+                                <small id="passwordHelpId" class="form-text text-muted">* Sua senha deve conter 8 caracteres no mínimo</small>
                                 <br />
-                                <div class="form mb-3" action="functions.php" method="post"post>
-                                      <!-- <label for="" class="form-label">Email</label> -->
-                                      <input type="email" class="form-control form-rounded" id="email" placeholder="E-mail">
-                                </div>
-                                <br />
-                                <div class="form mb-3" action="functions.php" method="post"post>
-                                      <!-- <label for="" class="form-label">Telefone</label> -->
-                                      <input type="text" class="form-control form-rounded" id="phone" placeholder="Telefone">
-                                </div>
-                                <br />
-                                <div class="form mb-3" action="functions.php" method="post"post>
-                                      <!-- <label for="" class="form-label">CPF</label> -->
-                                      <input type="text" class="form-control form-rounded" id="cpf" placeholder="CPF">
-                                </div>
-                                <br />
-                                <div class="form mb-3" action="functions.php" method="post"post>
-                                      <!-- <label for="" class="form-label">Senha</label> -->
-                                      <input type="password" class="form-control form-rounded" id="senha" placeholder="Senha"  aria-describedby="passwordHelpId">
-                                      <small id="passwordHelpId" class="form-text text-muted">* Sua senha deve conter 8 caracteres no mínimo</small>
-                                </div>
-                                <div class="form mb-3" action="functions.php" method="post"post>
-                                    <!-- <label for="" class="form-label">Confime sua Senha</label> -->
-                                    <input type="password" class="form-control form-rounded" id="senhaConfirmada" placeholder="Confirme a Senha"  aria-describedby="passwordHelpId">
-                                </div>
-                            <br />
+                                <input type="password" class="form-control form-rounded" id="senhaConfirmada" placeholder="Confirme a Senha"  aria-describedby="passwordHelpId">
+                            <br /><br />
                             <button type="submit" class="btn_send" alt="Botão Salvar">Salvar</button>
-                            <br /><br /><br /><hr /><br />
+                        </form>
+                            <br /><br /><hr />
 
                             <h4 id="item-2" style="padding-top: 1rem;">Meu Endereço</h4>
                             <br />
                             <!-- Address -->
-                                <div class="form mb-3" action="functions.php" method="post"post>
-                                    <!-- <label for="" class="form-label">CEP</label> -->
-                                    <input type="text" id="cep" class="form-control form-rounded" placeholder="CEP">
-                                </div>
-                                <br />
-                                <div class="form mb-3" action="functions.php" method="post"post>
-                                    <!-- <label for="" class="form-label">País</label> -->
-                                    <input type="text" id="pais" class="form-control form-rounded" placeholder="País">
-                                </div>
-                                <br />
-                                <div class="form mb-3" action="functions.php" method="post"post>
-                                    <!-- <label for="" class="form-label">Estado</label> -->
-                                    <input type="text" id="estado" class="form-control form-rounded" placeholder="Estado">
-                                </div>
-                                <br />
-                                <div class="form mb-3" action="functions.php" method="post"post>
-                                    <!-- <label for="" class="form-label">Cidade</label> -->
-                                    <input type="text" id="cidade" class="form-control form-rounded" placeholder="Cidade">
-                                </div>
-                                <br />
-                                <div class="form mb-3" action="functions.php" method="post"post>
-                                    <!-- <label for="" class="form-label">Bairro</label> -->
-                                    <input type="text" id="bairro" class="form-control form-rounded" placeholder="Bairro">
-                                </div>
-                                <br />
-                                <div class="form mb-3" action="functions.php" method="post"post>
-                                    <!-- <label for="" class="form-label">Rua</label> -->
-                                    <input type="text" id="rua" class="form-control form-rounded" placeholder="Rua">
-                                </div>
-                                <br />
-                                <div class="form mb-3" action="functions.php" method="post"post>
-                                    <!-- <label for="" class="form-label">Número</label> -->
-                                    <input type="text" id="numero" class="form-control form-rounded" placeholder="Número">
-                                </div>
-                                <br />
-                                <div class="form mb-3" action="functions.php" method="post"post>
-                                    <!-- <label for="" class="form-label">Complemento</label> -->
-                                    <input type="text" id="complemento" class="form-control form-rounded" placeholder="Complemento">
-                                </div>
-                            <br />
-                            <button type="submit" class="btn_send" alt="Botão Salvar">Salvar</button>
-                            <br /><br /><br /><hr /><br />
+                            <form action="functions.php" method="post"post>
+                                <input type="text" id="cep" class="form-control form-rounded" placeholder="CEP">
+                                <br /><br />
+                                <input type="text" id="pais" class="form-control form-rounded" placeholder="País">
+                                <br /><br />
+                                <input type="text" id="estado" class="form-control form-rounded" placeholder="Estado">
+                                <br /><br />
+                                <input type="text" id="cidade" class="form-control form-rounded" placeholder="Cidade">
+                                <br /><br />
+                                <input type="text" id="bairro" class="form-control form-rounded" placeholder="Bairro">
+                                <br /><br />
+                                <input type="text" id="rua" class="form-control form-rounded" placeholder="Rua">
+                                <br /><br />
+                                <input type="text" id="numero" class="form-control form-rounded" placeholder="Número">
+                                <br /><br />
+                                <input type="text" id="complemento" class="form-control form-rounded" placeholder="Complemento">
+                                <br /><br />
+                                <button type="submit" class="btn_send">Salvar</button>
+                            </form>
+                            <br /><br /><hr />
 
                             <h4 id="item-3" style="padding-top: 1rem;">Excluir Conta</h4>
                             <br />
                             <!-- Delete -->
-                            <div class="mb-3">
-                                <p>Deseja mesmo excluir sua conta?</p>
-                                <p>Digite sua senha e clique no botão excluir</p>
-                                <!-- <label for="" class="form-label">Senha</label> -->
-                                <input type="password" class="form-control form-rounded" id="senha" placeholder="Senha"  aria-describedby="passwordHelpId">
-                            </div>
-                            <br />
-                            <button type="delete" class="btn_send" alt="Botão Salvar">Excluir</button>
+                            <form action="functions.php" method="post"post>
+                                <div class="mb-3">
+                                    <p>Deseja mesmo excluir sua conta?</p>
+                                    <p>Digite sua senha e clique no botão excluir</p>
+                                    <br />
+                                    <input type="password" class="form-control form-rounded" id="senha" placeholder="Senha"  aria-describedby="passwordHelpId">
+                                </div>
+                                <br />
+                            <button type="submit" class="btn_send">Excluir</button>
                             <br /><br /><br /><br />
                         </div>
                     </div>

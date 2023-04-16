@@ -27,44 +27,41 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
     
-
+    
     <!-- linkando os estilos do css.style ao html -->
     <link href="./style.css" rel="stylesheet">
-
-</head>
-
-<!-- page -->
-
-<body>
-    <main>
-        <div class="container0">
-            <div class="row">
-                    <div class="d-flex flex-row-reverse">
-                        <a href="#deslogar" class="btn_icon"><i class="fa fa-sign-out" alt="Deslogar"></i></a>
-                        <a href="./login.html"class="btn_icon"><i class="fa fa-user"alt="Logar"></i></a>
-                        &nbsp; &nbsp; &nbsp;
-                        <!-- <a href="#cart" class="btn_icon"><i class="fa fa-shopping-cart" alt="Carrinho de Compras"></i></a> -->
-                    </div>
+    
+    <div class="container0">
+        <div class="row">
+            <div class="d-flex flex-row-reverse">
+                <a href="#deslogar" class="btn_icon"><i class="fa fa-sign-out" alt="Deslogar"></i></a>
+                <a href="./login.html"class="btn_icon"><i class="fa fa-user"alt="Logar"></i></a>
+                &nbsp; &nbsp; &nbsp;
+                <!-- <a href="#cart" class="btn_icon"><i class="fa fa-shopping-cart" alt="Carrinho de Compras"></i></a> -->
             </div>
         </div>
-        
-        <div class="containerPage">
-            <!-- links on navbar -->
-            <div class="container1">
-                <div class="row row-cols-5 text-center">
-                    <a href="./" class="btn_header">Home</a>
-                    <a href="./produtos.html" class="btn_header">Produtos</a>
-                    <!-- <a href="./" class="btn_title">TITULO</a> -->
-                    <img src="./assets/logo.png"></img>
-                    <a href="./quemsomos.html" class="btn_header">Quem Somos</a>
-                    <a href="./contato.html" class="btn_header">Contato</a>
-                </div>
+    </div>
+    
+    <div class="containerPage">
+        <!-- links on navbar -->
+        <div class="container1">
+            <div class="row row-cols-5 text-center">
+                <a href="./" class="btn_header">Home</a>
+                <a href="./produtos.html" class="btn_header">Produtos</a>
+                <!-- <a href="./" class="btn_title">TITULO</a> -->
+                <img src="./assets/logo.png"></img>
+                <a href="./quemsomos.html" class="btn_header">Quem Somos</a>
+                <a href="./contato.html" class="btn_header">Contato</a>
             </div>
-            <hr />
-            
-            
+        </div>
+        <hr />
+    </head>
+    
+    <!-- page -->
+    
+    <body>
+        <main>
             <!-- home -->
-            
             <!-- "Login" title -->
             <br /><br />
             <div class="container">
@@ -75,18 +72,10 @@
                     <br />
                     
                     <!-- e-mail, name and text fields -->
-                    <form>
-                        <div class="form-group">
-                            <!-- <label for="form_text">Endereço de E-mail</label> -->
-                            <input type="email" class="form-control form-rounded" id="form_email" placeholder="E-mail"
-                            alt="Campo de Email">
-                        </div>
-                        <br />
-                        <div class="form-group">
-                            <!-- <label for="form_text">Senha</label> -->
-                            <input type="email" class="form-control form-rounded" id="form_password" placeholder="Senha"
-                            alt="Campo de Senha">
-                        </div>
+                    <form action="funtions.php" method="post">
+                        <input type="email" class="form-control form-rounded" id="form_email" placeholder="E-mail">
+                        <br /><br />
+                        <input type="password" class="form-control form-rounded" id="form_password" placeholder="Senha">
                         <br />
                         <div class="col" style="text-align: start; padding-left: 1rem;">
                             <div class="form-group form-check">
@@ -96,31 +85,28 @@
                         </div>
                         
                         <!-- button -->
-                        <button type="enviar" class="btn_send" alt="Botão Logar">  Logar  </button>
-                        
-                        <br /><br /><br />
-                        <div>
-                            <label style="color: #f3dbcf;">Caso não possua uma conta,</label> 
-                            <a href="./cadastro.html" alt="Botão-Texto Cadastrar" style="color: white !important; font-size: larger;"> clique aqui </a>
-                            <label style="color: #f3dbcf;">para se cadastrar.</label>
-                        </div>
+                        <button type="submit" class="btn_send" alt="Botão Logar">  Logar  </button>
                     </form>
+                    
+                    <br /><br /><br />
+                    <div>
+                        <label style="color: #f3dbcf;">Caso não possua uma conta,</label> 
+                        <a href="./cadastro.html" alt="Botão-Texto Cadastrar" style="color: white !important; font-size: larger;"> clique aqui </a>
+                        <label style="color: #f3dbcf;">para se cadastrar.</label>
+                    </div>
                 </div>
             </div>
-        <!-- </div> -->
-        
+        </div>
+            
         <br /><br /><br /><br />
-        
         <!-- footer -->
-        
-    </div>
-        <div class="jumbotron jumbotron-fluid" style="color: #f3dbcf; background-color:#7e9680">
-            <div class="container">
+        <foot>
+            <div class="jumbotron2 jumbotron-fluid">
                 <img src="./assets/logo_footer.png"></img>
             </div>
-        </div>
-
-    </main>
-</body>
-
-</html>
+        </foot>
+            
+        </main>
+    </body>
+    
+    </html>
