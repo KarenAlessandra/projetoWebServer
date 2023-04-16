@@ -6,16 +6,12 @@
 
 <head>
     <?php
-    //incluir header da página
     include("header.php");
     ?>
 </head>
 
-<!-- page -->
-
 <body>
     <main>
-        <!-- Home -->
         <div class="containerPage">
             <br />
             <!-- <marquee scrollamount="30">
@@ -48,6 +44,7 @@
                 </a>
             </div>
             <br /><br />
+
             <!-- jumbotron -->
 
             <div class="jumbotron1 jumbotron-fluid">
@@ -63,8 +60,8 @@
                     </div>
                 </div>
             </div>
-
             </br>
+
             <!-- cards with pictures -->
 
             <div class="card-group">
@@ -111,14 +108,12 @@
 
         <foot>
             <?php
-            //incluir footer da página
             include("footer.php");
             ?>
         </foot>
 
 
     </main>
-    </div>
 </body>
 
 </html>
