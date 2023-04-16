@@ -33,18 +33,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <head>
     <?php
-    //incluir header da página
     include("header.php");
     ?>
 </head>
 
 <body>
     <main>
-        <!-- home -->
-
         <br /><br />
 
-        <!-- e-mail, name and text fields -->
         <div class="container">
             <div class="card text-center"
                 style="padding-top: 4rem; padding-left: 7rem; padding-right: 7rem; padding-bottom: 3rem; border-radius: 1%;">

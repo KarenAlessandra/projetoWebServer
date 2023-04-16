@@ -34,7 +34,7 @@
         <div class="row">
             <div class="d-flex flex-row-reverse">
                 <a href="#deslogar" class="btn_icon"><i class="fa fa-sign-out" alt="Deslogar"></i></a>
-                <a href="./login.html" class="btn_icon"><i class="fa fa-user" alt="Logar"></i></a>
+                <a href="./login.php" class="btn_icon"><i class="fa fa-user" alt="Logar"></i></a>
                 &nbsp; &nbsp; &nbsp;
                 <!-- <a href="#cart" class="btn_icon"><i class="fa fa-shopping-cart" alt="Carrinho de Compras"></i></a> -->
             </div>
