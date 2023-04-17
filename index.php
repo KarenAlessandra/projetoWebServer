@@ -13,11 +13,15 @@
 <body>
     <main>
         <div class="containerPage">
-            <!-- <marquee scrollamount="30">
-                <h1 class="h1_title text-center" style="color: #d87f81;">Bem
+
+            <!-- <br />
+            <marquee scrollamount="30">
+                <h1 class="h1_title text-center" style="color: #ae6378;">Bem
                     vindo a maior loja de bolos da região! &nbsp;&nbsp;&nbsp;</h1>
             </marquee> -->
+
             <br /><br />
+
             <div id="carousel" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -33,6 +37,7 @@
                         <img class="d-block w-100" src="./assets/4.jpg">
                     </div>
                 </div>
+
                 <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
@@ -42,6 +47,7 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
+
             <br /><br />
 
             <!-- jumbotron -->
@@ -76,6 +82,7 @@
                             liquorice cake apple pie.</p>
                     </div>
                 </div>
+
                 <div class="card"
                     style="border-style: dashed; border-left: none; border-right: none; border-color: #f3dbcf;">
                     <br>
@@ -89,6 +96,7 @@
                             chupa chups liquorice.</p>
                     </div>
                 </div>
+
                 <div class="card" style="border-style: dashed; border-left: none; border-color: #f3dbcf;">
                     <br>
                     <h5 class="card-title text-center">Card title</h5>
@@ -101,7 +109,9 @@
                     </div>
                 </div>
             </div>
+
             <br /><br /><br />
+
         </div>
         </div>
 

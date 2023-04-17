@@ -35,9 +35,11 @@
             <div class="d-flex flex-row-reverse">
                 &nbsp;&nbsp;
                 <li class="nav-item dropdown">
+                    <!-- <a href="./login.php"class="btn_icon"><i class="fa fa-user"alt="Logar"></i></a> -->
+
                     <a class="nav-item dropdown" data-bs-toggle="dropdown"><i class="fa fa-user"></i></a>
                     </a>
-                    <ul class="dropdown-menu text-center">
+                    <ul class="dropdown-menu text-center" style="background-color: #7e9680; border: none">
                         <li><a class="dropdown-item" href="./cadastroBolo.php">Add Bolo <i
                                     class="fa fa-birthday-cake"></i></a></li>
                         <li><a class="dropdown-item" href="./perfil.php">Configurações <i class="fa fa-gear"></i></a>

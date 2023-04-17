@@ -222,3 +222,8 @@ label {
     /* height: 100%; */
     height: 20rem;
 }
+
+.dropdown-item {
+    background-color: #7e9680;
+    color: #f3dbcf !important;
+}
