@@ -3,11 +3,11 @@
 
 <?php
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $cpf = $_POST['cpf'];
-    $senha = $_POST['senha'];
-    $senha_confirmada = $_POST['senhaConfirmada'];
+    $name = trim($_POST['name'], FILTER_SANITIZE_STRING);
+    $email = trim($_POST['email'], FILTER_SANITIZE_EMAIL);
+    $cpf = trim($_POST['cpf'], FILTER_SANITIZE_NUMBER_INT);
+    $senha = trim($_POST['senha']);
+    $senhaConfirmada = trim($_POST['senhaConfirmada']);
 
     if (empty($name) || empty($email) || empty($cpf) || empty($senha) || empty($senha_confirmada)) {
         echo 'Por favor, preencha todos os campos';
@@ -104,12 +104,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                             <input type="text" class="form-control form-rounded" id="cpf" placeholder="CPF" name="cpf">
                             <br /><br />
                             <input type="password" class="form-control form-rounded" id="senha" placeholder="Senha"
-                                aria-describedby="passwordHelpId" name="senha">
+                                name="senha">
                             <small id="passwordHelpId" class="form-text text-muted">* Sua senha deve conter 8 caracteres
                                 no mínimo</small>
                             <br />
                             <input type="password" class="form-control form-rounded" id="senhaConfirmada"
-                                placeholder="Confirme a Senha" aria-describedby="passwordHelpId" name="senhaConfirmada">
+                                placeholder="Confirme a Senha" name="senhaConfirmada">
                             <br /><br />
                             <button type="submit" class="btn_send" alt="Botão Salvar">Salvar</button>
                         </form>
@@ -155,8 +155,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                 <p>Deseja mesmo excluir sua conta?</p>
                                 <p>Digite sua senha e clique no botão excluir</p>
                                 <br />
-                                <input type="password" class="form-control form-rounded" id="senha" placeholder="Senha"
-                                    aria-describedby="passwordHelpId">
+                                <input type="password" class="form-control form-rounded" id="senha" placeholder="Senha">
                             </div>
                             <br />
                             <button type="submit" class="btn_send">Excluir</button>

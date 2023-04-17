@@ -9,13 +9,16 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
         $message = filter_var($_GET["form_message"], FILTER_SANITIZE_STRING);
         $peso = filter_var($_GET["form_peso"], FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_FRACTION);
         if (!empty($valor) && !empty($name) && !empty($message) && !empty($peso)) {
+            echo "Valor: " . $valor . "<br />" . "Nome: " . $name . "<br />" . "Descrição: " . $message . "<br />" . "Peso: " . $peso . "<br />";
             header("Location: cadastroBolo.php");
             exit();
         } else {
             $error = "Todos os campos são obrigatórios.";
+            echo $error;
         }
     } else {
-        $error = "Todos os campos são obrigatórios.";
+        $error = "Revise os campos preenchidos.";
+        echo $error;
     }
 }
 ?>

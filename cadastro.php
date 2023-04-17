@@ -5,9 +5,9 @@
 session_start();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = trim($_POST["name"]);
-    $cpf = trim($_POST["cpf"]);
-    $email = trim($_POST["email"]);
+    $name = trim($_POST["name"], FILTER_SANITIZE_STRING);
+    $cpf = trim($_POST["cpf"], FILTER_SANITIZE_STRING);
+    $email = trim($_POST["email"], FILTER_SANITIZE_EMAIL);
     $password = trim($_POST["senha"]);
     $confirm_password = trim($_POST["senhaConfirmada"]);
 

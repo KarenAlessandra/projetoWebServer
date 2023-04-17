@@ -5,7 +5,7 @@
 session_start();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $email = trim($_POST["email"]);
+    $email = trim($_POST["email"], FILTER_SANITIZE_EMAIL);
     $password = trim($_POST["password"]);
 
     if (empty($email) || empty($password)) {

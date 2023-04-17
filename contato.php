@@ -3,9 +3,9 @@
 
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = trim($_POST["name"]);
-    $email = trim($_POST["email"]);
-    $phone = trim($_POST["phone"]);
+    $name = trim($_POST["name"], FILTER_SANITIZE_STRING);
+    $email = trim($_POST["email"], FILTER_SANITIZE_EMAIL);
+    $phone = trim($_POST["phone"], FILTER_SANITIZE_NUMBER_INT);
     $message = trim($_POST["message"]);
 
     if (empty($name) || empty($email) || empty($phone) || empty($message)) {
