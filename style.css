@@ -96,17 +96,9 @@ textarea {
 }
 
 .btn_header {
-    border: none;
-    /* padding-top: 20px; */
-    background-color: inherit;
-    padding: 20px;
     font-size: 20px;
     font-family: monospace;
-    text-decoration: none;
-    text-align: center;
     line-height: 200px;
-    color: #D87F81;
-    /* display: inline-block;  */
 }
 
 .btn_icon {
@@ -116,6 +108,11 @@ textarea {
     padding: 0px 10px;
     font-size: 20px;
     color: #f3dbcf !important;
+}
+
+.nav-item {
+    color: #f3dbcf !important;
+    font-size: 20px;
 }
 
 .h1_title {
@@ -190,45 +187,6 @@ hr {
 
 .page-link {
     color: #7e9680;
-}
-
-.modal-header {
-    background-color: #f3dbcf;
-    color: #D87F81;
-}
-.modal-body {
-    background-color: #f3dbcf;
-    color: #D87F81;
-}
-.modal-footer {
-    background-color: #f3dbcf;
-    color: #D87F81;
-}
-
-.btn_carrinho {
-    background-color: #7e9680;
-    border: none;
-    color: #f3dbcf;
-    font-size: 20px;
-    /* padding: 10px 30px; */
-}
-
-.img_carrinho {
-    width: 6em;
-    height: 6em;
-}
-
-.btn_less {
-    background-color: #7e9680;
-    border: outset;
-    color: white;
-    padding: 1px 10px;
-}
-.btn_plus {
-    background-color: #7e9680;
-    border: outset;
-    color: white;
-    padding: 1px 10px;
 }
 
 nav {

@@ -13,7 +13,6 @@
 <body>
     <main>
         <div class="containerPage">
-            <br />
             <!-- <marquee scrollamount="30">
                 <h1 class="h1_title text-center" style="color: #d87f81;">Bem
                     vindo a maior loja de bolos da região! &nbsp;&nbsp;&nbsp;</h1>
@@ -70,7 +69,7 @@
                     <br>
                     <h5 class="card-title text-center">Card title</h5>
                     <br>
-                    <img class="card-img-top" src="./assets/8.jpg">
+                    <img class="card-img-top" src="./assets/8.jpg" style="height: 300px">
                     <div class="card-body text-align" style="color:#f3dbcf">
                         <p class="card-text" style="font-size: 15px;">Cupcake ipsum dolor sit amet macaroon jujubes.
                             Sweet wafer liquorice liquorice sweet roll jelly-o bear claw. Halvah cake donut cake brownie
@@ -82,7 +81,7 @@
                     <br>
                     <h5 class="card-title text-center">Card title</h5>
                     <br>
-                    <img class="card-img-top" src="./assets/7.jpg">
+                    <img class="card-img-top" src="./assets/7.jpg" style="height: 300px">
                     <div class="card-body" style="color:#f3dbcf">
                         <p class="card-text text-align" style="font-size: 15px;">Jelly-o dessert gingerbread cookie
                             icing. Carrot cake oat cake pastry gummies dragée I love. Tootsie roll caramels ice cream
@@ -94,7 +93,7 @@
                     <br>
                     <h5 class="card-title text-center">Card title</h5>
                     <br>
-                    <img class="card-img-top" src="./assets/9.jpg">
+                    <img class="card-img-top" src="./assets/9.jpg" style="height: 300px">
                     <div class="card-body" style="color:#f3dbcf">
                         <p class="card-text text-align" style="font-size: 15px;">Tart topping tootsie roll pie ice cream
                             gummi bears donut. Cookie sweet pie jelly beans pie jelly beans biscuit jelly beans
@@ -114,6 +113,7 @@
 
 
     </main>
+    </div>
 </body>
 
 </html>

@@ -33,10 +33,22 @@
     <div class="container0">
         <div class="row">
             <div class="d-flex flex-row-reverse">
-                <a href="#deslogar" class="btn_icon"><i class="fa fa-sign-out" alt="Deslogar"></i></a>
-                <a href="./login.php" class="btn_icon"><i class="fa fa-user" alt="Logar"></i></a>
-                &nbsp; &nbsp; &nbsp;
-                <!-- <a href="#cart" class="btn_icon"><i class="fa fa-shopping-cart" alt="Carrinho de Compras"></i></a> -->
+                &nbsp;&nbsp;
+                <li class="nav-item dropdown">
+                    <a class="nav-item dropdown" data-bs-toggle="dropdown"><i class="fa fa-user"></i></a>
+                    </a>
+                    <ul class="dropdown-menu text-center">
+                        <li><a class="dropdown-item" href="./cadastroBolo.php">Add Bolo <i
+                                    class="fa fa-birthday-cake"></i></a></li>
+                        <li><a class="dropdown-item" href="./perfil.php">Configurações <i class="fa fa-gear"></i></a>
+                        </li>
+                        <li><a class="dropdown-item" href="#deslogar">Deslogar <i class="fa fa-sign-out"></i></a>
+                        </li>
+                    </ul>
+                </li>
+
+                &nbsp;
+                <a href="#cart" class="btn_icon"><i class="fa fa-shopping-cart" al t="Carrinho de Compras"></i></a>
             </div>
         </div>
     </div>
@@ -46,9 +58,9 @@
         <div class="container1">
             <div class="row row-cols-5 text-center">
                 <a href="./" class="btn_header">Home</a>
-                <a href="./produtos.html" class="btn_header">Produtos</a>
+                <a href="./produtos.php" class="btn_header">Produtos</a>
                 <!-- <a href="./" class="btn_title colorName">TITULO</a> -->
-                <img src="./assets/logo.png"></img>
+                <img src="./assets/logo.png" style="height: 200px;"></img>
                 <a href="./quemsomos.html" class="btn_header">Quem Somos</a>
                 <a href="./contato.php" class="btn_header">Contato</a>
             </div>
