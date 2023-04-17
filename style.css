@@ -221,6 +221,7 @@ hr {
 
 nav {
     background-color: #f3dbcf;
+    border-radius: 1%;
 }
 
 label {
@@ -229,7 +230,7 @@ label {
 }
 
 .nav-link {
-    color: #f3dbcf !important;
+    color: #f3dbcf;
     line-height: 3;
     font-size: x-large;
 }

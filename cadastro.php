@@ -11,9 +11,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = trim($_POST["senha"]);
     $confirm_password = trim($_POST["senhaConfirmada"]);
 
-    if (empty($name) || empty($cpf) || empty($email) || empty($password) || empty($confirm_password)) {
-        echo "Por favor, preencha todos os campos do formulário.";
-        exit;
+    if (empty($name) || empty($email) || empty($cpf) || empty($senha) || empty($senha_confirmada)) {
+        echo 'Por favor, preencha todos os campos';
+    } elseif (strlen($senha) < 8) {
+        echo 'Sua senha deve ter no mínimo 8 caracteres';
+    } elseif ($senha != $senha_confirmada) {
+        echo 'As senhas não conferem';
+    } else {
+        //database code here soon
+        echo 'Usuário cadastrado com sucesso';
     }
 
     // if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -21,16 +27,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     //     exit;
     // }
 
-    if ($password !== $confirm_password) {
-        echo "As senhas não correspondem. Por favor, tente novamente.";
-        exit;
-    }
-
     // hashing the password
-    $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+    $hashed_password = password_hash($senha, PASSWORD_DEFAULT);
 
     // pending a database to store the data
-    $pdo = new PDO("mysql:host=localhost;dbname=mydatabase", "username", "password");
+    $pdo = new PDO("mysql:host=localhost;dbname=mydatabase", "name", "senha");
     $stmt = $pdo->prepare("INSERT INTO users (name, cpf, email, password) VALUES (?, ?, ?, ?)");
     $stmt->execute([$name, $cpf, $email, $hashed_password]);
 
