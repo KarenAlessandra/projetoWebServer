@@ -15,6 +15,18 @@ body {
     font-family: monospace;
 }
 
+input {
+    border-bottom: 1px solid #D87F81;
+    background-color: #f3dbcf !important;
+    font-family: monospace;
+    border-radius: 1rem;
+}
+
+textarea {
+    background-color: #f3dbcf !important;
+    font-family: monospace;
+}
+
 .form-rounded {
     border-radius: 1rem;
 }
@@ -232,6 +244,13 @@ label {
 .nav-link {
     color: #f3dbcf;
     line-height: 3;
+    font-size: x-large;
+}
+
+/* perfil */
+.nav-link1 { 
+    color: #D87F81 !important;
+    line-height: 4;
     font-size: x-large;
 }
 

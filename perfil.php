@@ -73,19 +73,18 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         <br /><br />
 
-        <div class="container" style="background-color: #D87F81; border-radius: 1%;">
+        <div class="container" style="background-color: #D87F81; border-radius: 1rem;">
             <div class="container">
                 <div class="row align-items-start">
                     <div class="col-4">
                         <br />
 
-                        <nav id="navbar-perfil" class="navbar flex-column align-items-stretch"
-                            style=" border-style: dashed;">
-                            <nav class="nav nav-pills flex-column">
-                                <a class="nav-link" href="#item-1">Meus Dados</a>
-                                <a class="nav-link" href="#item-2">Meu Endereço</a>
-                                <a class="nav-link" href="#item-3">Excluir Conta</a>
-                            </nav>
+                        <nav id="navbar-perfil" class="navbar flex-column align-items-stretch" style=" border-style: dashed;>
+                            <nav class=" nav nav-pills flex-column">
+                            <a class="nav-link1" href="#item-1">Meus Dados</a>
+                            <a class="nav-link1" href="#item-2">Meu Endereço</a>
+                            <a class="nav-link1" href="#item-3">Excluir Conta</a>
+                        </nav>
                     </div>
                     <div class="col" style="color: #f3dbcf; padding-top: 4rem;">
                         <br /><br />
