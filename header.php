@@ -61,7 +61,7 @@
                 <a href="./produtos.php" class="btn_header">Produtos</a>
                 <!-- <a href="./" class="btn_title colorName">TITULO</a> -->
                 <img src="./assets/logo.png" style="height: 200px;"></img>
-                <a href="./quemsomos.html" class="btn_header">Quem Somos</a>
+                <a href="./quemsomos.php" class="btn_header">Quem Somos</a>
                 <a href="./contato.php" class="btn_header">Contato</a>
             </div>
         </div>
