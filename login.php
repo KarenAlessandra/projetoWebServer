@@ -19,10 +19,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // }
 
     if ($email == "youremail@example.com" && $password == "yourpassword") {
-        // setring the session variables
         $_SESSION["email"] = $email;
 
-        // redirect to other page at the end of the script
         header("Location: home.php");
         exit;
     } else {
@@ -43,10 +41,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         <br /><br />
         <div class="container">
-            <div class="card text-center"
-                style="padding-top: 4rem; padding-left: 7rem; padding-right: 7rem; padding-bottom: 3rem; border-radius: 1%;">
+            <div class="cardGenerico text-center">
                 <div class="row">
-                    <h1 href="./" class="h1_title" alt="Página de Login" style="color: #f3dbcf">Login</h1>
+                    <h1 href="./" class="h1_title">Login</h1>
                 </div>
                 <br />
 
@@ -64,14 +61,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                 style="color: #f3dbcf; margin-bottom: 1rem; ">Continuar Logado</label>
                         </div>
                     </div>
-                    <button type="submit" class="btn_send" alt="Botão Logar"> Logar </button>
+                    <button type="submit" class="btn_send"> Logar </button>
                 </form>
 
                 <br /><br /><br />
                 <div>
                     <label style="color: #f3dbcf;">Caso não possua uma conta,</label>
-                    <a href="./cadastro.php" alt="Botão-Texto Cadastrar"
-                        style="color: white !important; font-size: larger;"> clique aqui </a>
+                    <a href="./cadastro.php" style="color: white !important; font-size: larger;"> clique aqui </a>
                     <label style="color: #f3dbcf;">para se cadastrar.</label>
                 </div>
             </div>

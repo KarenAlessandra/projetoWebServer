@@ -68,7 +68,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <br /><br />
 
         <div class="container">
-            <h1 class="h1_title colorName" alt="Configuracoes de Perfil">Configurações de Perfil</h1>
+            <h1 class="h1_title colorName">Configurações de Perfil</h1>
         </div>
 
         <br /><br />
@@ -111,7 +111,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                             <input type="password" class="form-control form-rounded" id="senhaConfirmada"
                                 placeholder="Confirme a Senha" name="senhaConfirmada">
                             <br /><br />
-                            <button type="submit" class="btn_send" alt="Botão Salvar">Salvar</button>
+                            <button type="submit" class="btn_send">Salvar</button>
                         </form>
                         <br /><br />
                         <hr />

@@ -35,8 +35,11 @@
             <div class="d-flex flex-row-reverse">
                 &nbsp;&nbsp;
                 <li class="nav-item dropdown">
-                    <!-- <a href="./login.php"class="btn_icon"><i class="fa fa-user"alt="Logar"></i></a> -->
 
+                    <!--user sem login-->
+                    <!-- <a href="./login.php"class="btn_icon"><i class="fa fa-user"></i></a> -->
+
+                    <!--user com login-->
                     <a class="nav-item dropdown" data-bs-toggle="dropdown"><i class="fa fa-user"></i></a>
                     </a>
                     <ul class="dropdown-menu text-center" style="background-color: #7e9680; border: none">
@@ -44,25 +47,34 @@
                                     class="fa fa-birthday-cake"></i></a></li>
                         <li><a class="dropdown-item" href="./perfil.php">Configurações <i class="fa fa-gear"></i></a>
                         </li>
+                        <!-- fazer o deslogar  -->
                         <li><a class="dropdown-item" href="#deslogar">Deslogar <i class="fa fa-sign-out"></i></a>
                         </li>
                     </ul>
                 </li>
 
                 &nbsp;
-                <a href="#cart" class="btn_icon"><i class="fa fa-shopping-cart" al t="Carrinho de Compras"></i></a>
+                <!-- fazer carrinho offcanvas -->
+
+                <a href="#cartOffCanvas" class="btn_icon"><i class="fa fa-shopping-cart"
+                        data-bs-toggle="offcanvas"></i></a>
+                <div class="offcanvas-start" href="carrinho">
+                    <div class="col text-center">
+                        <p>
+                            <blablabla /p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
 
     <div class="containerPage">
-        <!-- links on navbar -->
         <div class="container1">
             <div class="row row-cols-5 text-center">
                 <a href="./" class="btn_header">Home</a>
                 <a href="./produtos.php" class="btn_header">Produtos</a>
-                <!-- <a href="./" class="btn_title colorName">TITULO</a> -->
-                <img src="./assets/logo.png" style="height: 200px;"></img>
+                <a><img href="./index.php" src="./assets/logo.png" style="height: 200px;"></img></a>
                 <a href="./quemsomos.php" class="btn_header">Quem Somos</a>
                 <a href="./contato.php" class="btn_header">Contato</a>
             </div>

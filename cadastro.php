@@ -56,8 +56,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         <br /><br />
         <div class="container">
-            <div class="card text-center"
-                style="padding-top: 4rem; padding-left: 7rem; padding-right: 7rem; padding-bottom: 1rem; border-radius: 1%;">
+            <div class="cardGenerico text-center">
                 <div class="row">
                     <h1 href="./" class="h1_title" style="color: #f3dbcf; padding-bottom: 2rem;">Cadastro</h1>
                 </div>
@@ -79,24 +78,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         placeholder="Confirme Senha">
                     <br /><br />
 
-                    <button type="submit" class="btn_send" style="margin-bottom: 2rem;">Cadastrar</button>
+                    <button type="submit" class="btn_send">Cadastrar</button>
                 </form>
 
                 <br /><br />
                 <div>
                     <label style="color: #f3dbcf;">Já possui uma conta? </label>
-                    <a href="./login.php" alt="Botão-Texto Cadastrar"
-                        style="color: white !important; font-size: larger;"> clique aqui </a>
+                    <a href="./login.php" style="color: white !important; font-size: larger;"> clique aqui </a>
                     <label style="color: #f3dbcf;">para fazer o login.</label>
                 </div>
                 <br />
 
-                <!-- <div>
+                <div>
                     <label style="color: #f3dbcf;">Conta de Administrador? </label>
-                    <a href="./cadastroAdmin.html" alt="Botão-Texto Cadastrar"
-                        style="color: white !important; font-size: larger;"> clique aqui </a>
+                    <a href="./cadastroAdmin.html" style="color: white !important; font-size: larger;"> clique aqui </a>
                     <label style="color: #f3dbcf;">para se cadastrar.</label>
-                </div> -->
+                </div>
 
                 <br /><br />
             </div>

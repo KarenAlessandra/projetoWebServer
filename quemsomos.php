@@ -11,14 +11,14 @@
     <main>
         <br />
         <div class="row">
-            <h1 class="h1_title" alt="Página Quem Somos">Sobre nós</h1>
+            <h1 class="h1_title">Sobre nós</h1>
         </div>
 
-        <div class="container" style="padding: 3rem; background-color: rgb(45, 60, 51); border-radius: 1%;">
+        <div class="containerQuemSomos">
             <div class="row" style="margin-top: 1rem;">
                 <div class="col">
                     <br><br>
-                    <img src="./assets/6.jpg" class style="height: 19rem;">
+                    <img src="./assets/6.jpg" style="height: 19rem;">
                 </div>
                 <div class="col text-align" style="font-size: 20px; color: #f3dbcf;">
                     <br><br /><br />

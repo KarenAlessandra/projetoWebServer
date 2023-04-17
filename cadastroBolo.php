@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
     if (isset($_GET["form_valor"]) && isset($_GET["form_name"]) && isset($_GET["form_message"]) && isset($_GET["form_peso"])) {
         $valor = filter_var($_GET["form_valor"], FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_FRACTION);
         $name = filter_var($_GET["form_name"], FILTER_SANITIZE_STRING);
-        $message = filter_var($_GET["form_message"], FILTER_SANITIZE_STRING);
+        $message = filter_var($_GET["form_message"]);
         $peso = filter_var($_GET["form_peso"], FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_FRACTION);
         if (!empty($valor) && !empty($name) && !empty($message) && !empty($peso)) {
             echo "Valor: " . $valor . "<br />" . "Nome: " . $name . "<br />" . "Descrição: " . $message . "<br />" . "Peso: " . $peso . "<br />";
@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
             echo $error;
         }
     } else {
-        $error = "Revise os campos preenchidos.";
+        $error = "Todos os campos são obrigatórios.";
         echo $error;
     }
 }
@@ -57,7 +57,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
                     <input type="peso" class="form-control form-rounded" id="form_peso" placeholder="Peso em kg">
                     <br /><br />
                     <!-- button -->
-                    <button type="submit" class="btn_send" style="margin-bottom: 6px;">Cadastrar</button>
+                    <button type="submit" class="btn_send" style="margin-bottom: 6px !important">Cadastrar</button>
                 </form>
             </div>
         </div>

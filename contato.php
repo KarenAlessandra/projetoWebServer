@@ -42,8 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <br /><br />
 
         <div class="container">
-            <div class="card text-center"
-                style="padding-top: 4rem; padding-left: 7rem; padding-right: 7rem; padding-bottom: 3rem; border-radius: 1%;">
+            <div class="cardGenerico text-center">
                 <form action="contato.php" method="post">
                     <h2 style="color: #f3dbcf;">Entre em contato conosco :D</h2>
                     <br /><br /><br />
