@@ -35,14 +35,15 @@
                     </div>
                 </form>
             </div>
+        </div>
 
-            <br /><br /><br /><br />
+        <br /><br /><br /><br />
 
-            <foot>
-                <?php
-                include("footer.php");
-                ?>
-            </foot>
+        <foot>
+            <?php
+            include("footer.php");
+            ?>
+        </foot>
 
     </main>
 </body>

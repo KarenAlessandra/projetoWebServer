@@ -1,62 +1,6 @@
 <!doctype html>
 <html lang="en">
 
-<?php
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $name = trim($_POST['name'], FILTER_SANITIZE_STRING);
-    $email = trim($_POST['email'], FILTER_SANITIZE_EMAIL);
-    $cpf = trim($_POST['cpf'], FILTER_SANITIZE_NUMBER_INT);
-    $senha = trim($_POST['senha']);
-    $senhaConfirmada = trim($_POST['senhaConfirmada']);
-
-    if (empty($name) || empty($email) || empty($cpf) || empty($senha) || empty($senha_confirmada)) {
-        echo 'Por favor, preencha todos os campos';
-    } elseif (strlen($senha) < 8) {
-        echo 'Sua senha deve ter no mínimo 8 caracteres';
-    } elseif ($senha != $senha_confirmada) {
-        echo 'As senhas não conferem';
-    } else {
-        //database code here soon
-        echo 'Dados do usuário atualizados com sucesso';
-    }
-}
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $cep = $_POST["cep"];
-    $pais = $_POST["pais"];
-    $estado = $_POST["estado"];
-    $cidade = $_POST["cidade"];
-    $bairro = $_POST["bairro"];
-    $rua = $_POST["rua"];
-    $numero = $_POST["numero"];
-    $complemento = $_POST["complemento"];
-    header("Location: perfil.php");
-    exit();
-}
-
-session_start();
-
-// include 'database.php';
-
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $user_id = $_SESSION['user_id'];
-    $senha = $_POST['senha'];
-    $hashed_password = password_hash($password, PASSWORD_DEFAULT);
-
-    if (password_verify($password, $user['password'])) {
-        $sql = "DELETE FROM users WHERE id = ?";
-        $stmt = $conn->prepare($sql);
-        $stmt->bind_param('i', $user_id);
-        $stmt->execute();
-
-        session_destroy();
-        header('Location: index.php');
-        exit();
-    } else {
-        $error = 'Senha inválida.';
-    }
-} ?>
-
 <head>
     <?php
     include("header.php");
@@ -92,7 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                         <h4 id="item-1">Meus dados</h4>
                         <br />
                         <!-- profile -->
-                        <form action="perfil.php" method="post" post>
+                        <form action="./functions/editUser.php" method="post" post>
                             <input type="text" id="name" class="form-control form-rounded" placeholder="Nome Completo"
                                 name="name">
                             <br /><br />
@@ -119,7 +63,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                         <h4 id="item-2" style="padding-top: 1rem;">Meu Endereço</h4>
                         <br />
                         <!-- Address -->
-                        <form action="perfil.php" method="post" post>
+                        <form action="./functions/editAddress.php" method="post" post>
                             <input type="text" id="cep" class="form-control form-rounded" placeholder="CEP" name="cep">
                             <br /><br />
                             <input type="text" id="pais" class="form-control form-rounded" placeholder="País"
@@ -150,7 +94,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                         <h4 id="item-3" style="padding-top: 1rem;">Excluir Conta</h4>
                         <br />
                         <!-- Delete -->
-                        <form action="perfil.php" method="post">
+                        <form action="./functions/deleteUser.php" method="post">
                             <div class="mb-3">
                                 <p>Deseja mesmo excluir sua conta?</p>
                                 <p>Digite sua senha e clique no botão excluir</p>
@@ -164,7 +108,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     </div>
                 </div>
             </div>
-        </div>
         </div>
         </div>
 
