@@ -191,6 +191,45 @@
                     </ul>
                 </nav>
             </div>
+
+            <!-- pagination page 2 -->
+            <!-- <div class="d-flex justify-content-center">
+                        <nav>
+                                <ul class="pagination">
+                                    <li class="page-item">
+                                        <a class="page-link" href="./produtos.html">&lt;</a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="./produtos.html">1</a></li>
+                                    <li class="page-item active" aria-current="page">
+                                        <a class="page-link" href="./produtos2.html">2</a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="./produtos3.html">3</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="./produtos3.html">&gt;</a>
+                                    </li>
+                                </ul>
+                        </nav>
+                    </div>
+                </div> -->
+
+            <!-- pagination page 3 -->
+            <!-- <div class="d-flex justify-content-center">
+                    <nav>
+                        <ul class="pagination">
+                            <li class="page-item">
+                                <a class="page-link" href="./produtos2.html">&lt;</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="./produtos.html">1</a></li>
+                            <li class="page-item" aria-current="page">
+                                <a class="page-link" href="./produtos2.html">2</a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="./produtos3.html">3</a></li>
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" aria-disabled="true">&gt;</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div> -->
         </div>
 
         <br />
