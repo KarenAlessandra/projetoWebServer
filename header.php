@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- page's name -->
-    <title>Loja de Bolo</title>
+    <title>Cake Shop</title>
+
+    <!-- still nedt to put the favicon icon -->
+    <link rel="icon" href="favicon.ico" />
 
     <!-- imports-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
