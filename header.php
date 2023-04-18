@@ -52,14 +52,14 @@
                 </li>
 
                 &nbsp;
-                <!-- fazer carrinho offcanvas -->
 
+                <!-- carrinho offcanvas -->
                 <a href="#offcanvas" class="btn_icon"><i class="fa fa-shopping-cart" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"></i></a>
-                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" data-bs-keyboard="false"
-                    data-bs-backdrop="false" aria-labelledby="offcanvasExampleLabel">
+                        data-bs-target="#offcanvasCart" aria-controls="offcanvasCart"></i></a>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasCart" data-bs-keyboard="false"
+                    data-bs-backdrop="false" aria-labelledby="offcanvasCartLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Carrinho</h5>
+                        <h5 class="offcanvas-title" id="offcanvasCartLabel">Carrinho</h5>
                         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                             aria-label="Close"></button>
                     </div>

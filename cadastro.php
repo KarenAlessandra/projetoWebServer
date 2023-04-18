@@ -53,7 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="container">
             <div class="cardGenerico text-center">
                 <div class="row">
-                    <h1 href="./" class="h1_title" style="color: #f3dbcf; padding-bottom: 2rem;">Cadastro</h1>
+                    <h1 class="h1_title" style="color: #f3dbcf; padding-bottom: 2rem;">Cadastro</h1>
                 </div>
                 <br />
 

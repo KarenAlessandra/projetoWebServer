@@ -54,7 +54,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="card text-center"
                 style="padding-top: 4rem; padding-left: 7rem; padding-right: 7rem; padding-bottom: 1rem; border-radius: 1%;">
                 <div class="row">
-                    <h1 href="./" class="h1_title" style="color: #f3dbcf; padding-bottom: 2rem;">Cadastro</h1>
+                    <h1 class="h1_title" style="color: #f3dbcf; padding-bottom: 2rem;">Cadastro</h1>
                 </div>
                 <br />
 

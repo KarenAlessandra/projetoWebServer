@@ -182,11 +182,11 @@
                         </li>
                         <li class="page-item active"><a class="page-link" href="./produtos.html">1</a></li>
                         <li class="page-item" aria-current="page">
-                            <a class="page-link" href="./produtos2.html">2</a>
+                            <a class="page-link" href="./produtos.php?page=2">2</a>
                         </li>
-                        <li class="page-item"><a class="page-link" href="./produtos3.html">3</a></li>
+                        <li class="page-item"><a class="page-link" href="./produtos.php?page=3.html">3</a></li>
                         <li class="page-item">
-                            <a class="page-link" href="./produtos2.html">&gt;</a>
+                            <a class="page-link" href="./produtos.php?page=2">&gt;</a>
                         </li>
                     </ul>
                 </nav>

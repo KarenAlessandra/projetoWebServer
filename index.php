@@ -60,7 +60,7 @@
                                 bolo ao lado:</p>
                         </div>
                         <div class="col text-center">
-                            <a href="./produtos.html"><i class="fa fa-birthday-cake" style="font-size: 10rem;"></i></a>
+                            <a href="./produtos.php"><i class="fa fa-birthday-cake" style="font-size: 10rem;"></i></a>
                         </div>
                     </div>
                 </div>
