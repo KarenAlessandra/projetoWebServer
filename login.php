@@ -1,35 +1,6 @@
 <!doctype html>
 <html lang="en">
 
-<?php
-session_start();
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $email = trim($_POST["email"], FILTER_SANITIZE_EMAIL);
-    $password = trim($_POST["password"]);
-
-    if (empty($email) || empty($password)) {
-        echo "Por favor, preencha todos os campos do formulário.";
-        exit;
-    }
-
-    // if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-    //     echo "Endereço de E-mail inválido. Por favor, verifique e tente novamente.";
-    //     exit;
-    // }
-
-    if ($email == "youremail@example.com" && $password == "yourpassword") {
-        $_SESSION["email"] = $email;
-
-        header("Location: home.php");
-        exit;
-    } else {
-        echo "E-mail ou Senha incorretos. Por favor, tente novamente.";
-        exit;
-    }
-}
-?>
-
 <head>
     <?php
     include("header.php");
@@ -47,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </div>
                 <br />
 
-                <form action="login.php" method="post">
+                <form action="./functions/log.php" method="post">
                     <input type="email" class="form-control form-rounded" id="form_email" name="email"
                         placeholder="E-mail">
                     <br /><br />
