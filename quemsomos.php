@@ -17,7 +17,7 @@
         </div>
 
         <div class="containerPage"
-            style="background-color: rgb(45, 60, 51); margin-left: 10rem; margin-right: 10rem; margin-top: 1rem">
+            style="background-color: rgb(45, 60, 51); margin-left: 10rem; margin-right: 10rem; margin-top: 1rem; border-radius: 1%;">
             <div class="row">
                 <div class=" col">
                     <br><br>
