@@ -80,7 +80,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                 <div>
                     <label style="color: #f3dbcf;">Já possui uma conta? </label>
-                    <a href="./login.html" style="color: white !important; font-size: larger;"> clique aqui </a>
+                    <a href="./login.php" style="color: white !important; font-size: larger;"> clique aqui </a>
                     <label style="color: #f3dbcf;">para fazer o login.</label>
                 </div>
                 <br />
