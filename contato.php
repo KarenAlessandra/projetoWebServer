@@ -28,23 +28,21 @@
                     <textarea class="form-control form-rounded" id="message" name="message" rows="4"
                         placeholder="Digite sua Mensagem">
                         </textarea>
-                    <!-- button -->
                     <br /><br />
+
                     <div class="col text-center">
                         <button type="submit" class="btn_send">Enviar</button>
                     </div>
                 </form>
             </div>
-        </div>
-        </div>
 
-        <br /><br /><br /><br />
+            <br /><br /><br /><br />
 
-        <foot>
-            <?php
-            include("footer.php");
-            ?>
-        </foot>
+            <foot>
+                <?php
+                include("footer.php");
+                ?>
+            </foot>
 
     </main>
 </body>

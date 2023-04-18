@@ -20,7 +20,7 @@
                 <br />
 
                 <!-- e-mail, name and text fields -->
-                <form action="./functions/registerUser.php" method="post">
+                <form class="form-user-register" action="functions/registerUser.php" method="post">
                     <input type="name" class="form-control form-rounded" id="name" name="name"
                         placeholder="Nome Completo">
                     <br /><br />
@@ -35,7 +35,7 @@
                         placeholder="Confirme Senha">
                     <br /><br />
 
-                    <button type="submit" class="btn_send">Cadastrar</button>
+                    <button type="submit" class="btn_send" class="submit">Cadastrar</button>
                 </form>
 
                 <br />
@@ -54,8 +54,6 @@
 
                 <br />
             </div>
-        </div>
-        </div>
         </div>
 
         <br /><br /><br /><br />

@@ -1,6 +1,8 @@
 <?php
 session_start();
 
+$name = $cpf = $email = $senha = $senhaConfirmada = "";
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = trim($_POST["name"], FILTER_SANITIZE_STRING);
     $cpf = trim($_POST["cpf"], FILTER_SANITIZE_STRING);
@@ -10,7 +12,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if (empty($name) || empty($email) || empty($cpf) || empty($senha) || empty($senhaConfirmada)) {
         echo 'Por favor, preencha todos os campos';
-        header("Location: ./cadastro.php");
     } elseif (strlen($senha) < 8) {
         echo 'Sua senha deve ter no mínimo 8 caracteres';
     } elseif ($senha != $senhaConfirmada) {

@@ -56,53 +56,31 @@
                 <!-- carrinho offcanvas -->
                 <a href="#offcanvas" class="btn_icon"><i class="fa fa-shopping-cart" data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvasCart" aria-controls="offcanvasCart"></i></a>
+
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasCart" data-bs-keyboard="false"
                     data-bs-backdrop="false" aria-labelledby="offcanvasCartLabel">
+
                     <div class="offcanvas-header">
                         <h5 class="offcanvas-title" id="offcanvasCartLabel">Carrinho</h5>
                         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                             aria-label="Close"></button>
                     </div>
+
                     <div class="offcanvas-body">
                         <div id="sidebar" class="border rounded">
                             <div class="nav flex-column py-3">
 
                                 <a href="#menu1" class="nav-link collapsed" data-bs-toggle="collapse" role="button">Item
                                     1</a>
-
                                 <div class="collapse ps-2" id="menu1" data-bs-parent="#sidebar">
-                                    <a href="#menu1sub1" class="nav-link" data-bs-toggle="collapse"
-                                        aria-expanded="false">Subitem1 1</a>
-                                    <div class="collapse ps-2" id="menu1sub1" data-bs-parent="#menu1">
-                                        <a href="#" class="nav-link" data-bs-parent="#menu1sub1">Subitem a</a>
-                                        <a href="#" class="nav-link" data-bs-parent="#menu1sub1">Subitem b</a>
-                                        <a href="#menu1sub1sub1" class="nav-link" data-bs-toggle="collapse"
-                                            aria-expanded="false">Subitem c </a>
-                                        <div class="collapse" id="menu1sub1sub1" data-bs-parent="#menu1sub1sub1">
-                                            <a href="#" class="nav-link">Subitem c.1</a>
-                                            <a href="#" class="nav-link">Subitem c.2</a>
-                                        </div>
-                                        <a href="#" class="nav-link" data-bs-parent="#menu1sub1">Subitem d</a>
-                                        <a href="#menu1sub1sub2" class="nav-link" data-bs-toggle="collapse"
-                                            aria-expanded="false">Subitem e </a>
-                                        <div class="collapse" id="menu1sub1sub2">
-                                            <a href="#" class="nav-link">Subitem e.1</a>
-                                            <a href="#" class="nav-link">Subitem e.2</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <a href="#menu2" class="nav-link collapsed" data-bs-toggle="collapse"
-                                    data-bs-parent="#sidebar">Item 2</a>
-
-                                <div class="collapse ps-2" id="menu2" data-bs-parent="#sidebar">
-                                    <a href="#menu2sub1" class="nav-link" data-bs-toggle="collapse"
-                                        aria-expanded="false">Subitem2 1</a>
-                                    <div class="collapse ps-2" id="menu2sub1" data-bs-parent="#menu2">
-                                        <a href="#" class="nav-link" data-bs-parent="#menu2sub1">Subitem A</a>
-                                        <a href="#" class="nav-link" data-bs-parent="#menu2sub1">Subitem B</a>
-                                        <a href="#" class="nav-link" data-bs-parent="#menu2sub1">Subitem C</a>
-                                    </div>
+                                    <row>
+                                        <a href="#menu1sub1" class="nav-link-cart" data-bs-toggle="collapse"
+                                            aria-expanded="false">1</a>
+                                        <a href="#menu1sub2" class="nav-link-cart" data-bs-toggle="collapse"
+                                            aria-expanded="false">2</a>
+                                        <a href="#menu1sub3" class="nav-link-cart" data-bs-toggle="collapse"
+                                            aria-expanded="false">Lixo</a>
+                                    </row>
                                 </div>
 
                             </div>
