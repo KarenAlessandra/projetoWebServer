@@ -8,24 +8,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = trim($_POST["name"], FILTER_SANITIZE_STRING);
     $cpf = trim($_POST["cpf"], FILTER_SANITIZE_STRING);
     $email = trim($_POST["email"], FILTER_SANITIZE_EMAIL);
-    $password = trim($_POST["senha"]);
-    $confirm_password = trim($_POST["senhaConfirmada"]);
+    $senha = trim($_POST["senha"]);
+    $senhaConfirmada = trim($_POST["senhaConfirmada"]);
 
-    if (empty($name) || empty($email) || empty($cpf) || empty($senha) || empty($senha_confirmada)) {
+    if (empty($name) || empty($email) || empty($cpf) || empty($senha) || empty($senhaConfirmada)) {
         echo 'Por favor, preencha todos os campos';
     } elseif (strlen($senha) < 8) {
         echo 'Sua senha deve ter no mínimo 8 caracteres';
-    } elseif ($senha != $senha_confirmada) {
+    } elseif ($senha != $senhaConfirmada) {
         echo 'As senhas não conferem';
     } else {
         //database code here soon
         echo 'Usuário cadastrado com sucesso';
     }
-
-    // if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-    //     echo "Endereço de E-mail inválido. Por favor, verifique e tente novamente.";
-    //     exit;
-    // }
 
     // hashing the password
     $hashed_password = password_hash($senha, PASSWORD_DEFAULT);
@@ -81,7 +76,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <button type="submit" class="btn_send">Cadastrar</button>
                 </form>
 
-                <br /><br />
+                <br />
                 <div>
                     <label style="color: #f3dbcf;">Já possui uma conta? </label>
                     <a href="./login.php" style="color: white !important; font-size: larger;"> clique aqui </a>
@@ -91,11 +86,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                 <div>
                     <label style="color: #f3dbcf;">Conta de Administrador? </label>
-                    <a href="./cadastroAdmin.html" style="color: white !important; font-size: larger;"> clique aqui </a>
+                    <a href="./cadastroAdmin.php" style="color: white !important; font-size: larger;"> clique aqui </a>
                     <label style="color: #f3dbcf;">para se cadastrar.</label>
                 </div>
 
-                <br /><br />
+                <br />
             </div>
         </div>
         </div>

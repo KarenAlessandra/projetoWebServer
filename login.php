@@ -43,7 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="container">
             <div class="cardGenerico text-center">
                 <div class="row">
-                    <h1 href="./" class="h1_title">Login</h1>
+                    <h1 href="./" class="h1_title" style="color: #f3dbcf">Login</h1>
                 </div>
                 <br />
 
@@ -60,6 +60,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             <label class="form-check-label" for="check"
                                 style="color: #f3dbcf; margin-bottom: 1rem; ">Continuar Logado</label>
                         </div>
+                        <!-- missing "forgot my password" function -->
                     </div>
                     <button type="submit" class="btn_send"> Logar </button>
                 </form>

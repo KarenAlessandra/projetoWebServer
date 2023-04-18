@@ -138,7 +138,8 @@ textarea {
     padding-left: 7rem; 
     padding-right: 7rem; 
     padding-bottom: 3rem; 
-    border-radius: 1%
+    border-radius: 1%;
+    background-color: #D87F81 !important;
 }
 
 /* card da pagina produto */

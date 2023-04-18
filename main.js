@@ -1,7 +1,8 @@
 
-const myModal = document.getElementById('myModal')
-const myInput = document.getElementById('myInput')
+// var offcanvasElementList = [].slice.call(document.querySelectorAll('.offcanvas'))
+// var offcanvasList = offcanvasElementList.map(function (offcanvasEl) {
+//   return new bootstrap.Offcanvas(offcanvasEl)
+// })
 
-myModal.addEventListener('shown.bs.modal', () => {
-  myInput.focus()
-})
+// var offcanvasElement = document.getElementById('offcanvasCart');
+// var offcanvas = new bootstrap.Offcanvas(offcanvasElement);
