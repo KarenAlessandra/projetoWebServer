@@ -1,31 +1,6 @@
 <!doctype html>
 <html lang="en">
 
-<?php
-if ($_SERVER["REQUEST_METHOD"] == "GET") {
-    if (isset($_GET["form_valor"]) && isset($_GET["form_name"]) && isset($_GET["form_message"]) && isset($_GET["form_peso"])) {
-        $valor = filter_var($_GET["form_valor"], FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_FRACTION);
-        $name = filter_var($_GET["form_name"], FILTER_SANITIZE_STRING);
-        $message = filter_var($_GET["form_message"]);
-        $peso = filter_var($_GET["form_peso"], FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_FRACTION);
-        if (!empty($valor) && !empty($name) && !empty($message) && !empty($peso)) {
-            echo "Cadastro do bolo realizado com sucesso!";
-            printf("$valor, $name, $message, $peso");
-            header("Location: cadastroBolo.php");
-            exit();
-        } else {
-            $error = "Todos os campos são obrigatórios.";
-            echo $error;
-        }
-
-    } else {
-        $error = "Todos os campos são obrigatórios.";
-        echo $error;
-    }
-}
-?>
-
-
 <head>
     <?php
     include("header.php");
@@ -43,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
                 </div>
                 <br />
 
-                <form action="cadastroBolo.php" method="get">
+                <form action="./functions/registerCake.php" method="get">
                     <p style="color: #f3dbcf; text-align: start;">Insira a imagem do bolo</p>
                     <input class="form-control" type="file" id="formFile">
                     <br />
