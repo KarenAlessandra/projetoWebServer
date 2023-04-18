@@ -1,45 +1,6 @@
 <!doctype html>
 <html lang="en">
 
-<?php
-session_start();
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = trim($_POST["name"], FILTER_SANITIZE_STRING);
-    $register = trim($_POST["register"], FILTER_SANITIZE_NUMBER_INT);
-    $email = trim($_POST["email"], FILTER_SANITIZE_EMAIL);
-    $password = trim($_POST["senha"]);
-    $confirm_password = trim($_POST["senhaConfirmada"]);
-
-    if (empty($name) || empty($email) || empty($cpf) || empty($senha) || empty($senha_confirmada)) {
-        echo 'Por favor, preencha todos os campos';
-    } elseif (is_numeric($register) == false) {
-        echo 'O registro deve conter apenas números';
-    } elseif (strlen($senha) < 8) {
-        echo 'Sua senha deve ter no mínimo 8 caracteres';
-    } elseif ($senha != $senha_confirmada) {
-        echo 'As senhas não conferem';
-    } else {
-        //database code here soon
-        echo 'Usuário cadastrado com sucesso';
-    }
-
-    // hashing the password
-    $hashed_password = password_hash($senha, PASSWORD_DEFAULT);
-
-    // pending a database to store the data
-    $pdo = new PDO("mysql:host=localhost;dbname=mydatabase", "name", "senha");
-    $stmt = $pdo->prepare("INSERT INTO users (name, cpf, email, password) VALUES (?, ?, ?, ?)");
-    $stmt->execute([$name, $register, $email, $hashed_password]);
-
-    $_SESSION["email"] = $email;
-
-    header("Location: index.php");
-
-    exit;
-}
-?>
-
 <head>
     <?php
     include("header.php");
@@ -59,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <br />
 
                 <!-- e-mail, name and text fields -->
-                <form action="cadastroAdmin.php" method="post">
+                <form action="./functions/registerAdmin.php" method="post">
                     <input type="name" class="form-control form-rounded" id="name" name="name"
                         placeholder="Nome Completo">
                     <br /><br />

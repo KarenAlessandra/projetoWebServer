@@ -1,16 +1,16 @@
 <?php
 session_start();
 
-$name = $cpf = $email = $senha = $senhaConfirmada = "";
+$name = $register = $email = $senha = $senhaConfirmada = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = trim($_POST["name"], FILTER_SANITIZE_STRING);
-    $cpf = trim($_POST["cpf"], FILTER_SANITIZE_STRING);
+    $register = trim($_POST["register"], FILTER_SANITIZE_NUMBER_INT);
     $email = trim($_POST["email"], FILTER_SANITIZE_EMAIL);
     $senha = trim($_POST["senha"]);
     $senhaConfirmada = trim($_POST["senhaConfirmada"]);
 
-    if (empty($name) || empty($email) || empty($cpf) || empty($senha) || empty($senhaConfirmada)) {
+    if (empty($name) || empty($register) || empty($email) || empty($senha) || empty($senhaConfirmada)) {
         echo 'Por favor, preencha todos os campos';
     } elseif (strlen($senha) < 8) {
         echo 'Sua senha deve ter no mínimo 8 caracteres';
@@ -26,8 +26,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // pending a database to store the data :p
     $pdo = new PDO("mysql:host=localhost;dbname=mydatabase", "name", "senha");
-    $stmt = $pdo->prepare("INSERT INTO users (name, cpf, email, password) VALUES (?, ?, ?, ?)");
-    $stmt->execute([$name, $cpf, $email, $hashed_password]);
+    $stmt = $pdo->prepare("INSERT INTO users (name, cpf, email, senha) VALUES (?, ?, ?, ?)");
+    $stmt->execute([$name, $register, $email, $hashed_password]);
 
     $_SESSION["email"] = $email;
 

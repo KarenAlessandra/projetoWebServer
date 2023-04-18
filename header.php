@@ -9,7 +9,7 @@
     <title>Cake Shop</title>
 
     <!-- still nedt to put the favicon icon -->
-    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" href="./assets/favicon.ico" />
 
     <!-- imports-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
