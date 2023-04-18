@@ -15,17 +15,19 @@
         <div class="containerPage">
 
             <div class="container2" style="border-radius: 1%; padding-right: 30px !important">
-                <form action="produtos.php" method="get">
+
+                <form action="./functions/searchProducts.php" method="get">
                     <div class="input-group">
                         <input type="text" class="form-control form-rounded" placeholder="Encontre seu bolo"
-                            style="height: 49px" />
+                            style="height: 49px" name="search_query" id="search_query" />
                         <div class="input-group-append">
                             <button class="btn_send" type="submit">Buscar</button>
                         </div>
                     </div>
                 </form>
+
                 <br /><br />
-                <!-- style="background-color: rgb(45, 60, 51);" -->
+
                 <div class="row text-center">
                     <div class="col-lg-3 col-sm-6 col-xl-2">
                         <div class="card chama" style="border-radius: 3%;">
