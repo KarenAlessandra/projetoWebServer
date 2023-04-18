@@ -57,14 +57,6 @@ textarea {
     padding-right: 0px;
 }
 
-
-/*container da pagina Quem Somos*/
-.containerQuemSomos {
-    padding: 3rem; 
-    background-color: rgb(45, 60, 51); 
-    border-radius: 1%;
-}
-
 .containerLogin {
     padding-left: 10rem;
     padding-right: 10rem;
@@ -212,7 +204,7 @@ label {
 }
 
 .nav-link {
-    color: #f3dbcf;
+    color: #f3dbcf !important;
     line-height: 3;
     font-size: x-large;
 }
@@ -238,4 +230,14 @@ label {
 .dropdown-item {
     background-color: #7e9680;
     color: #f3dbcf !important;
+}
+
+.offcanvas-body {
+    background-color: #7e9680;
+    color: #f3dbcf
+}
+
+.offcanvas-header {
+    background-color: #7e9680;
+    color: #f3dbcf
 }

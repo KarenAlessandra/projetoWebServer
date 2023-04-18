@@ -14,10 +14,11 @@
         <br />
         <div class="containerPage">
 
-            <div class="container2" style="border-radius: 1%; padding-right: 5rem !important">
+            <div class="container2" style="border-radius: 1%; padding-right: 30px !important">
                 <form action="produtos.php" method="get">
                     <div class="input-group">
-                        <input type="text" class="form-control form-rounded" placeholder="Encontre seu bolo" />
+                        <input type="text" class="form-control form-rounded" placeholder="Encontre seu bolo"
+                            style="height: 49px" />
                         <div class="input-group-append">
                             <button class="btn_send" type="submit">Buscar</button>
                         </div>
@@ -172,7 +173,7 @@
                     </div>
                 </div>
             </div>
-            <br />
+            <br /><br />
             <div class="d-flex justify-content-center">
                 <nav>
                     <ul class="pagination">

@@ -36,7 +36,6 @@
             <div class="d-flex flex-row-reverse">
                 &nbsp;&nbsp;
                 <li class="nav-item dropdown">
-
                     <!--user sem login-->
                     <!-- <a href="./login.php"class="btn_icon"><i class="fa fa-user"></i></a> -->
 
@@ -128,5 +127,8 @@
             </div>
         </div>
     </div>
-    <hr />
+
+    <div class="containerPage">
+        <hr>
+    </div>
 </head>
