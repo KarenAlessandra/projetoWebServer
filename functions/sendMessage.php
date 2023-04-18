@@ -6,7 +6,7 @@ $name = $email = $subject = $message = "";
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = trim($_POST['name'], FILTER_SANITIZE_STRING);
     $email = trim($_POST['email'], FILTER_SANITIZE_EMAIL);
-    $subject = trim($_POST['subject']);
+    $subject = trim($_POST['subject'], FILTER_SANITIZE_STRING);
     $message = trim($_POST['message']);
 
     if (empty($name) || empty($email) || empty($subject) || empty($message)) {
@@ -27,5 +27,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     //     echo "Erro ao enviar mensagem. Tente novamente.";
     // }
 }
-
 ?>

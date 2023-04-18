@@ -11,11 +11,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $senhaConfirmada = trim($_POST["senhaConfirmada"]);
 
     if (empty($name) || empty($email) || empty($cpf) || empty($senha) || empty($senhaConfirmada)) {
-        echo 'Por favor, preencha todos os campos';
+        $error = 'Por favor, preencha todos os campos';
+        echo $error;
     } elseif (strlen($senha) < 8) {
-        echo 'Sua senha deve ter no mínimo 8 caracteres';
+        $error = 'Sua senha deve ter no mínimo 8 caracteres';
+        echo $error;
     } elseif ($senha != $senhaConfirmada) {
-        echo 'As senhas não conferem';
+        $error = 'As senhas não conferem';
+        echo $error;
     } else {
         //database code here soon
         echo 'Usuário cadastrado com sucesso';
@@ -32,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $_SESSION["email"] = $email;
 
-    header("Location: ./index.php");
+    // header("Location: ./index.php");
 
     exit;
 }
