@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$name = $cpf = $email = $senha = $senhaConfirmada = "";
+// $name = $cpf = $email = $senha = $senhaConfirmada = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = trim($_POST["name"], FILTER_SANITIZE_STRING);
@@ -22,7 +22,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         //database code here soon
         echo 'Usuário cadastrado com sucesso';
-        // header("Location: ../index.php");
+        sleep(2);
+        header("Location: ../index.php");
     }
 
     // hashing the password

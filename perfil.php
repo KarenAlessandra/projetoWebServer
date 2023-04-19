@@ -63,7 +63,7 @@
                         <h4 id="item-2" style="padding-top: 1rem;">Meu Endereço</h4>
                         <br />
                         <!-- Address -->
-                        <form action="./functions/editAddress.php" method="post" post>
+                        <form action="./functions/editAddress.php" method="post">
                             <input type="text" id="cep" class="form-control form-rounded" placeholder="CEP" name="cep">
                             <br /><br />
                             <input type="text" id="pais" class="form-control form-rounded" placeholder="País"
@@ -99,7 +99,8 @@
                                 <p>Deseja mesmo excluir sua conta?</p>
                                 <p>Digite sua senha e clique no botão excluir</p>
                                 <br />
-                                <input type="password" class="form-control form-rounded" id="senha" placeholder="Senha">
+                                <input type="password" class="form-control form-rounded" id="senha" name="senha"
+                                    placeholder="Senha">
                             </div>
                             <br />
                             <button type="submit" class="btn_send">Excluir</button>

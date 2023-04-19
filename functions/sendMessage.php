@@ -1,6 +1,6 @@
 <?php
 
-$name = $email = $subject = $message = "";
+// $name = $email = $subject = $message = "";
 
 // if (isset($_POST['submit'])) {
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -10,9 +10,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = trim($_POST['message']);
 
     if (empty($name) || empty($email) || empty($subject) || empty($message)) {
-        echo "Por favor, preencha todos os campos do formulário.";
+        $error = "Por favor, preencha todos os campos do formulário.";
+        echo $error;
     } else {
         echo "Mensagem enviada com sucesso!";
+        sleep(2);
+        header("Location: ../contato.php");
     }
 
     $mailTo = "karen.pedrozo@hotmail.com";

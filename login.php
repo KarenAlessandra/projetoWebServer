@@ -31,7 +31,7 @@
                             <label class="form-check-label" for="check"
                                 style="color: #f3dbcf; margin-bottom: 1rem; ">Continuar Logado</label>
                         </div>
-                        <!-- missing "forgot my password" function -->
+                        <!-- missing "forgot my password" function, for now -->
                     </div>
                     <button type="submit" class="btn_send"> Logar </button>
                 </form>

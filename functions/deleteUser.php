@@ -1,30 +1,24 @@
 <?php
-
-session_start();
-// include 'database.php';
-
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    if (isset($_SESSION['user_id'])) {
-        $user_id = $_SESSION['user_id'];
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if (isset($_POST['senha'])) {
         $senha = $_POST['senha'];
-        $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
-        if (password_verify($password, $user['password'])) {
-            // $sql = "DELETE FROM users WHERE id = ?";
-            // $stmt = $conn->prepare($sql);
-            // $stmt->bind_param('i', $user_id);
-            // $stmt->execute();
-
-            session_destroy();
-            echo 'Usuário excluído com sucesso';
-            // header('Location: index.php');
-            exit();
-        } elseif (empty($senha)) {
-            $error = 'Por favor, preencha todos os campos.';
+        if (empty($_POST["senha"])) {
+            $error = "Senha é obrigatória";
             echo $error;
+
+        } else if ($senha == $senha) {
+            //delete the user
+            $sql = "DELETE FROM users WHERE id = $id";
+            $result = mysqli_query($conn, $sql);
+            if ($result) {
+                echo "Conta excluída com sucesso";
+                header("Location: ../index.php");
+            } else {
+                echo "Erro ao excluir conta, tente novamente mais tarde";
+            }
         } else {
-            $error = 'Senha inválida.';
-            echo $error;
+            echo "Senha incorreta";
         }
     }
 }

@@ -1,15 +1,15 @@
 <?php
 session_start();
 
-$name = $register = $email = $senha = $senhaConfirmada = "";
+// $name = $register = $email = $senha = $senhaConfirmada = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST["name"]) && isset($_POST["register"]) && isset($_POST["email"]) && isset($_POST["senha"]) && isset($_POST["senhaConfirmada"])) {
         $name = filter_var($_POST["name"], FILTER_SANITIZE_STRING);
         $register = filter_var($_POST["register"], FILTER_SANITIZE_NUMBER_INT);
         $email = filter_var($_POST["email"], FILTER_SANITIZE_EMAIL);
-        $senha = filter_var($_POST["senha"]);
-        $senhaConfirmada = filter_var($_POST["senhaConfirmada"]);
+        $senha = filter_var($_POST["senha"], FILTER_SANITIZE_STRING);
+        $senhaConfirmada = filter_var($_POST["senhaConfirmada"], FILTER_SANITIZE_STRING);
     } else {
         $error = "Todos os campos são obrigatórios.";
         echo $error;
@@ -26,6 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo $error;
     } else {
         //database code here soon
+        sleep(2);
         echo 'Usuário cadastrado com sucesso';
         // header("Location: ../index.php");
     }
