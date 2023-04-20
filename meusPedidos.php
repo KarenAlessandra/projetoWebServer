@@ -24,9 +24,10 @@ if (empty($_SESSION["logado"]) || $_SESSION["logado"] == false) {
                 <div class="row">
                     <h1 class="h1_title" style="color: #f3dbcf;">Meus Pedidos</h1>
                 </div>
-                <br />
 
-                <p>Você ainda não tem pedidos :(</p>
+                <hr />
+                <br /><br />
+                <p style="color: #f3dbcf">Você ainda não tem pedidos :(</p>
 
                 </form>
             </div>
