@@ -101,11 +101,11 @@ session_start();
                                 <div class="collapse ps-2" id="menu1" data-bs-parent="#sidebar">
                                     <row>
                                         <a href="#menu1sub1" class="nav-link-cart" data-bs-toggle="collapse"
-                                            aria-expanded="false">1</a>
+                                            aria-expanded="false"><i class="fa fa-plus"></i></a>
                                         <a href="#menu1sub2" class="nav-link-cart" data-bs-toggle="collapse"
-                                            aria-expanded="false">2</a>
+                                            aria-expanded="false"><i class="fa-sharp fa-solid fa-dash"></i></a>
                                         <a href="#menu1sub3" class="nav-link-cart" data-bs-toggle="collapse"
-                                            aria-expanded="false">Lixo</a>
+                                            aria-expanded="false"><i class="fa fa-trash"></i></a>
                                     </row>
                                 </div>
 
