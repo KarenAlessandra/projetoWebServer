@@ -103,7 +103,7 @@ session_start();
                                         <a href="#menu1sub1" class="nav-link-cart" data-bs-toggle="collapse"
                                             aria-expanded="false"><i class="fa fa-plus"></i></a>
                                         <a href="#menu1sub2" class="nav-link-cart" data-bs-toggle="collapse"
-                                            aria-expanded="false"><i class="fa-sharp fa-solid fa-dash"></i></a>
+                                            aria-expanded="false"><i class="fa-regular fa-dash"></i></a>
                                         <a href="#menu1sub3" class="nav-link-cart" data-bs-toggle="collapse"
                                             aria-expanded="false"><i class="fa fa-trash"></i></a>
                                     </row>
