@@ -77,7 +77,7 @@ session_start();
                     </ul> -->
                 </li>
 
-                &nbsp;
+                &nbsp;&nbsp;
 
                 <!-- carrinho offcanvas -->
                 <a href="#offcanvas" class="btn_icon"><i class="fa fa-shopping-cart" data-bs-toggle="offcanvas"
