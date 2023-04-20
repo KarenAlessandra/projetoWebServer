@@ -36,7 +36,7 @@
                     <button type="submit" class="btn_send"> Logar </button>
                 </form>
 
-                <br /><br /><br />
+                <br />
                 <div>
                     <label style="color: #f3dbcf;">Caso não possua uma conta,</label>
                     <a href="./cadastro.php" style="color: white !important; font-size: larger;"> clique aqui </a>

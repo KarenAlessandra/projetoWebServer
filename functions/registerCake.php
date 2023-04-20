@@ -10,16 +10,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (empty($name) || empty($email) || empty($subject) || empty($message)) {
             $error = "Por favor, preencha todos os campos do formulário.";
             echo $error;
-        } else if (empty($_FILES["File"]["name"])) {
-            $error = "Por favor, insira uma imagem.";
-            echo $error;
+            // } else if (empty($_FILES["File"]["name"])) {
+            //     $error = "Por favor, insira uma imagem.";
+            //     echo $error;
         } else if (empty($_POST["Price"])) {
-            $price_err = "Por favor, insira o valor do bolo.";
+            $error = "Por favor, insira o valor do bolo.";
+            echo $error;
         } else if (empty($_POST["NameCake"])) {
             $error = "Por favor, insira o título do bolo.";
             echo $error;
-        }
-        if (empty($_POST["Description"])) {
+        } else if (empty($_POST["Description"])) {
             $error = "Por favor, insira a descrição do bolo.";
             echo $error;
         } else if (empty($_POST["Weight"])) {
