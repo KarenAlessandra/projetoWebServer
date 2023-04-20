@@ -22,6 +22,7 @@
 
             <br /><br />
 
+            <!-- carousel -->
             <div id="carousel" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -50,9 +51,8 @@
 
             <br /><br /><br />
 
+            <!-- jumbotron -->
             <div class="container" style="margin-left: 2rem; margin-right: 2rem">
-                <!-- jumbotron -->
-
                 <div class="jumbotron1 jumbotron-fluid">
                     <div class="container">
                         <div class="row align-items-center">
@@ -71,7 +71,6 @@
                 </br>
 
                 <!-- cards with pictures -->
-
                 <div class="card-group">
                     <div class="card"
                         style="border-style: dashed; border-left: dashed; border-right: none; border-color: #f3dbcf;">

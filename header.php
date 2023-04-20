@@ -1,6 +1,10 @@
 <!doctype html>
 <html lang="en">
 
+<?php
+session_start();
+?>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -39,19 +43,38 @@
             <div class="d-flex flex-row-reverse">
                 &nbsp;&nbsp;
                 <li class="nav-item dropdown">
-                    <!--user sem login-->
-                    <!-- <a href="./login.php"class="btn_icon"><i class="fa fa-user"></i></a> -->
 
-                    <!--user com login-->
+                    <!-- if user is not logged in -->
+                    <?php if (!isset($_SESSION['logado']) || $_SESSION['logado'] == false): ?>
+                        <a href="./login.php" class="btn_icon"><i class="fa fa-user"></i></a>
+                    <?php endif; ?>
+
+                    <?php if (isset($_SESSION['logado']) && $_SESSION['logado'] == true): ?>
+                        <a class="nav-item dropdown" data-bs-toggle="dropdown"><i class="fa fa-user"></i></a>
+                        <ul class="dropdown-menu text-center" style="background-color: #7e9680; border: none">
+                            <li><a class="dropdown-item" href="./cadastroBolo.php">Add Bolo <i
+                                        class="fa fa-birthday-cake"></i></a></li>
+                            <li><a class="dropdown-item" href="./index.php">Meus Pedidos<i
+                                        class="fa fa-birthday-cake"></i></a></li>
+                            <li><a class="dropdown-item" href="./perfil.php">Configurações <i class="fa fa-gear"></i></a>
+                            </li>
+                            <li><a class="dropdown-item" href="./functions/logout.php">Deslogar <i
+                                        class="fa fa-sign-out"></i></a>
+                            </li>
+                        </ul>
+                    <?php endif ?>
+
+                    <!-- if (isset($_SESSION['logado']) && $_SESSION['logado'] == true && isset($_SESSION['user'])):
                     <a class="nav-item dropdown" data-bs-toggle="dropdown"><i class="fa fa-user"></i></a>
                     <ul class="dropdown-menu text-center" style="background-color: #7e9680; border: none">
-                        <li><a class="dropdown-item" href="./cadastroBolo.php">Add Bolo <i
-                                    class="fa fa-birthday-cake"></i></a></li>
+                        <li><a class="dropdown-item" href="./index.php">Meus Pedidos <i
+                        class="fa fa-birthday-cake"></i></a></li>
                         <li><a class="dropdown-item" href="./perfil.php">Configurações <i class="fa fa-gear"></i></a>
                         </li>
-                        <li><a class="dropdown-item" href="#deslogar">Deslogar <i class="fa fa-sign-out"></i></a>
+                        <li><a class="dropdown-item" href="./functions/logout.php">Deslogar <i
+                        class="fa fa-sign-out"></i></a>
                         </li>
-                    </ul>
+                    </ul> -->
                 </li>
 
                 &nbsp;
