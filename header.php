@@ -96,16 +96,20 @@ session_start();
                         <div id="sidebar" class="border rounded">
                             <div class="nav flex-column py-3">
 
-                                <a href="#menu1" class="nav-link collapsed" data-bs-toggle="collapse" role="button">Item
+                                <a href="#menu1" class="nav-link collapsed" data-bs-toggle="collapse" role="button">Bolo
                                     1</a>
                                 <div class="collapse ps-2" id="menu1" data-bs-parent="#sidebar">
                                     <row>
-                                        <a href="#menu1sub1" class="nav-link-cart" data-bs-toggle="collapse"
-                                            aria-expanded="false"><i class="fa fa-plus"></i></a>
-                                        <a href="#menu1sub2" class="nav-link-cart" data-bs-toggle="collapse"
-                                            aria-expanded="false"><i class="fa-regular fa-dash"></i></a>
-                                        <a href="#menu1sub3" class="nav-link-cart" data-bs-toggle="collapse"
-                                            aria-expanded="false"><i class="fa fa-trash"></i></a>
+                                        &nbsp;
+                                        <a href="#more" class="nav-link-cart" data-bs-toggle="collapse"
+                                            aria-expanded="false"><i class="fa fa-plus" style="color: white"></i></a>
+                                        &nbsp;
+                                        <a href="#less" class="nav-link-cart" data-bs-toggle="collapse"
+                                            aria-expanded="false"><i class="fa fa-minus !important"
+                                                style="color: white"></i></a>
+                                        &nbsp;
+                                        <a href="#delete" class="nav-link-cart" data-bs-toggle="collapse"
+                                            aria-expanded="false"><i class="fa fa-trash" style="color: white"></i></a>
                                     </row>
                                 </div>
 
