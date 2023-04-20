@@ -112,9 +112,12 @@ session_start();
                                             aria-expanded="false"><i class="fa fa-trash" style="color: white"></i></a>
                                     </row>
                                 </div>
-
                             </div>
                         </div>
+                        <br /><br />
+                        <a href="./checkout.php" class="btn btn-success btn-block"
+                            style="background-color: #2D3C33; border: #7e9680; color: #f3dbcf !important">Finalizar
+                            Pedido</a>
                     </div>
                 </div>
             </div>
