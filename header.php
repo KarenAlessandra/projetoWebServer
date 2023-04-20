@@ -54,7 +54,7 @@ session_start();
                         <ul class="dropdown-menu text-center" style="background-color: #7e9680; border: none">
                             <li><a class="dropdown-item" href="./cadastroBolo.php">Add Bolo <i
                                         class="fa fa-birthday-cake"></i></a></li>
-                            <li><a class="dropdown-item" href="./index.php">Meus Pedidos<i
+                            <li><a class="dropdown-item" href="./meusPedidos.php">Meus Pedidos<i
                                         class="fa fa-birthday-cake"></i></a></li>
                             <li><a class="dropdown-item" href="./perfil.php">Configurações <i class="fa fa-gear"></i></a>
                             </li>

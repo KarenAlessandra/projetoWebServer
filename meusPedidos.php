@@ -1,14 +1,6 @@
 <!doctype html>
 <html lang="en">
 
-<?php
-session_start();
-
-if (empty($_SESSION["logado"]) || $_SESSION["logado"] == false) {
-    header("Location: ./login.php");
-}
-?>
-
 <head>
     <?php
     include("header.php");
