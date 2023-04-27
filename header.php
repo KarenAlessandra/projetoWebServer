@@ -49,13 +49,18 @@ session_start();
                         <a href="./login.php" class="btn_icon"><i class="fa fa-user"></i></a>
                     <?php endif; ?>
 
-                    <?php if (isset($_SESSION['logado']) && $_SESSION['logado'] == true): ?>
+                    <!-- if user client is logged in -->
+                    <?php if ($_SESSION['logado'] == true && isset($_SESSION['user']) == 'user'): ?>
                         <a class="nav-item dropdown" data-bs-toggle="dropdown"><i class="fa fa-user"></i></a>
                         <ul class="dropdown-menu text-center" style="background-color: #7e9680; border: none">
                             <li><a class="dropdown-item" href="./cadastroBolo.php">Add Bolo <i
                                         class="fa fa-birthday-cake"></i></a></li>
-                            <li><a class="dropdown-item" href="./meusPedidos.php">Meus Pedidos<i
+
+                            <!-- como não esta funcionando a diferença entre user e admin -->
+                            <li><a class="dropdown-item" href="./meusPedidos.php">Meus Pedidos <i
                                         class="fa fa-birthday-cake"></i></a></li>
+
+
                             <li><a class="dropdown-item" href="./perfil.php">Configurações <i class="fa fa-gear"></i></a>
                             </li>
                             <li><a class="dropdown-item" href="./functions/logout.php">Deslogar <i
@@ -64,17 +69,20 @@ session_start();
                         </ul>
                     <?php endif ?>
 
-                    <!-- if (isset($_SESSION['logado']) && $_SESSION['logado'] == true && isset($_SESSION['user'])):
-                    <a class="nav-item dropdown" data-bs-toggle="dropdown"><i class="fa fa-user"></i></a>
-                    <ul class="dropdown-menu text-center" style="background-color: #7e9680; border: none">
-                        <li><a class="dropdown-item" href="./index.php">Meus Pedidos <i
-                        class="fa fa-birthday-cake"></i></a></li>
-                        <li><a class="dropdown-item" href="./perfil.php">Configurações <i class="fa fa-gear"></i></a>
-                        </li>
-                        <li><a class="dropdown-item" href="./functions/logout.php">Deslogar <i
-                        class="fa fa-sign-out"></i></a>
-                        </li>
-                    </ul> -->
+                    <!-- if user admin is logged in -->
+                    <!-- <?php if ($_SESSION['logado'] == true && isset($_SESSION['user']) == 'admin'): ?>
+                        <a class="nav-item dropdown" data-bs-toggle="dropdown"><i class="fa fa-user"></i></a>
+                        <ul class="dropdown-menu text-center" style="background-color: #7e9680; border: none">
+                            <li><a class="dropdown-item" href="./meusPedidos.php">Meus Pedidos <i
+                                        class="fa fa-birthday-cake"></i></a></li>
+                            <li><a class="dropdown-item" href="./perfil.php">Configurações <i class="fa fa-gear"></i></a>
+                            </li>
+                            <li><a class="dropdown-item" href="./functions/logout.php">Deslogar <i
+                                        class="fa fa-sign-out"></i></a>
+                            </li>
+                        </ul>
+                    <?php endif ?> -->
+
                 </li>
 
                 &nbsp;&nbsp;
@@ -120,10 +128,10 @@ session_start();
                             Pedido</a>
                     </div>
                 </div>
+                <!-- fim carrinho -->
             </div>
 
 
-            <blablabla>
         </div>
     </div>
 
