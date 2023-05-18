@@ -1,7 +1,6 @@
 <?php
-session_start();
 
-// $name = $cpf = $email = $senha = $senhaConfirmada = "";
+session_start();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = trim($_POST["name"], FILTER_SANITIZE_STRING);
@@ -29,9 +28,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // hashing the password
     $hashed_password = password_hash($senha, PASSWORD_DEFAULT);
 
-    // pending a database to store the data :p
+    $sql = "INSERT INTO `User` (`NomeCompleto`, `Email`, `Cpf`, `Senha`, `Cep`, `Pais`, `Estado`, `Cidade`, `Bairro`, `Rua`, `Numero`, `Complemento`, `ID`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, NULL);";
     $pdo = new PDO("mysql:host=localhost;dbname=mydatabase", "name", "senha");
-    $stmt = $pdo->prepare("INSERT INTO users (name, cpf, email, password) VALUES (?, ?, ?, ?)");
+    $stmt = $pdo->prepare($sql);
     $stmt->execute([$name, $cpf, $email, $hashed_password]);
 
     $_SESSION["email"] = $email;

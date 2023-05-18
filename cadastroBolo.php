@@ -18,24 +18,23 @@
                 </div>
                 <br />
 
-                <form action="./functions/registerCake.php" method="post">
+                <form action="./functions/registerCake.php" method="POST">
                     <p style="color: #f3dbcf; text-align: start;">Insira a imagem do bolo</p>
-                    <input class="form-control" type="file" id="File">
+                    <input class="form-control" type="file" id="Imagem">
                     <br />
 
                     <p style="color: #f3dbcf; text-align: start;">Valor em reais: </p>
-                    <input type="price" class="form-control form-rounded" id="Price" placeholder="R$ 00,00">
+                    <input type="text" class="form-control form-rounded" id="Preco" placeholder="R$ 00,00">
                     <br /><br />
 
-                    <input type="nameBolo" class="form-control form-rounded" id="NameCake"
-                        placeholder="Título do Produto">
+                    <input type="text" class="form-control form-rounded" id="Titulo" placeholder="Título do Produto">
                     <br /><br />
 
-                    <textarea type="description" class="form-control form-rounded" type="descriptionBolo"
-                        id="Description" rows="4" placeholder="Digite a descrição do bolo"></textarea>
+                    <textarea type="description" class="form-control form-rounded" type="text" id="Descricao" rows="4"
+                        placeholder="Digite a descrição do bolo"></textarea>
                     <br /><br />
 
-                    <input type="peso" class="form-control form-rounded" id="Weight" placeholder="00,00 kg">
+                    <input type="text" class="form-control form-rounded" id="Peso" placeholder="00,00 kg">
                     <br /><br />
 
                     <!-- button -->
