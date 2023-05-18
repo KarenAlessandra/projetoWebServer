@@ -72,6 +72,7 @@ session_start();
                             <li><a class="dropdown-item" href="./cadastroBolo">Add Bolo <i
                                         class="fa fa-birthday-cake"></i></a></li>
                             <li><a class="dropdown-item" href="./perfil">Configurações <i class="fa fa-gear"></i></a>
+                            <li><a class="dropdown-item" href="./perfil">Configurações <i class="fa fa-gear"></i></a>
                             </li>
                             <li><a class="dropdown-item" href="./functions/logout">Deslogar <i
                                         class="fa fa-sign-out"></i></a></li>

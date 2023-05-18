@@ -2,9 +2,9 @@
 session_start();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    if (isset($_POST["name"]) && isset($_POST["register"]) && isset($_POST["email"]) && isset($_POST["senha"]) && isset($_POST["senhaConfirmada"])) {
+    if (isset($_POST["name"]) && isset($_POST["cpf"]) && isset($_POST["email"]) && isset($_POST["senha"]) && isset($_POST["senhaConfirmada"])) {
         $name = filter_var($_POST["name"], FILTER_SANITIZE_STRING);
-        $register = filter_var($_POST["register"], FILTER_SANITIZE_NUMBER_INT);
+        $register = filter_var($_POST["cpf"], FILTER_SANITIZE_NUMBER_INT);
         $email = filter_var($_POST["email"], FILTER_SANITIZE_EMAIL);
         $senha = filter_var($_POST["senha"], FILTER_SANITIZE_STRING);
         $senhaConfirmada = filter_var($_POST["senhaConfirmada"], FILTER_SANITIZE_STRING);
@@ -37,7 +37,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $sql = "INSERT INTO User (name, cpf, email, senha) VALUES (?, ?, ?, ?)";
         $stmt = mysqli_prepare($conn, $sql);
-        mysqli_stmt_bind_param($stmt, "ssss", $name, $register, $email, $hashed_password);
+        mysqli_stmt_bind_param($stmt, "ssss", $name, $cpf, $email, $hashed_password);
 
         if (mysqli_stmt_execute($stmt)) {
             echo "Usuário cadastrado com sucesso";

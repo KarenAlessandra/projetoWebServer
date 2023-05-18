@@ -24,7 +24,7 @@
                     <input type="name" class="form-control form-rounded" id="name" name="name"
                         placeholder="Nome Completo">
                     <br /><br />
-                    <input type="register" class="form-control form-rounded" id="register" name="register"
+                    <input type="register" class="form-control form-rounded" id="register" name="cpf"
                         placeholder="Registro Cake Shop">
                     <br /><br />
                     <input type="email" class="form-control form-rounded" id="email" name="email" placeholder="E-mail">
