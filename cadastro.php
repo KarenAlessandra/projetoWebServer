@@ -41,14 +41,14 @@
                 <br />
                 <div>
                     <label style="color: #f3dbcf;">Já possui uma conta? </label>
-                    <a href="./login.php" style="color: white !important; font-size: larger;"> clique aqui </a>
+                    <a href="./login" style="color: white !important; font-size: larger;"> clique aqui </a>
                     <label style="color: #f3dbcf;">para fazer o login.</label>
                 </div>
                 <br />
 
                 <div>
                     <label style="color: #f3dbcf;">Conta de Administrador? </label>
-                    <a href="./cadastroAdmin.php" style="color: white !important; font-size: larger;"> clique aqui </a>
+                    <a href="./cadastroAdmin" style="color: white !important; font-size: larger;"> clique aqui </a>
                     <label style="color: #f3dbcf;">para se cadastrar.</label>
                 </div>
 

@@ -46,7 +46,7 @@ session_start();
 
                     <!-- if user is not logged in -->
                     <?php if (!isset($_SESSION['logado']) || $_SESSION['logado'] == false): ?>
-                        <a href="./login.php" class="btn_icon"><i class="fa fa-user"></i></a>
+                        <a href="./login" class="btn_icon"><i class="fa fa-user"></i></a>
                     <?php endif; ?>
 
                     <!-- if user client is logged in -->
@@ -55,12 +55,12 @@ session_start();
                         <ul class="dropdown-menu text-center" style="background-color: #7e9680; border: none">
 
                             <!-- corrected condition for user-specific options -->
-                            <li><a class="dropdown-item" href="./meusPedidos.php">Meus Pedidos <i
+                            <li><a class="dropdown-item" href="./meusPedidos">Meus Pedidos <i
                                         class="fa fa-birthday-cake"></i></a></li>
 
-                            <li><a class="dropdown-item" href="./perfil.php">Configurações <i class="fa fa-gear"></i></a>
+                            <li><a class="dropdown-item" href="./perfil">Configurações <i class="fa fa-gear"></i></a>
                             </li>
-                            <li><a class="dropdown-item" href="./functions/logout.php">Deslogar <i
+                            <li><a class="dropdown-item" href="./functions/logout">Deslogar <i
                                         class="fa fa-sign-out"></i></a></li>
                         </ul>
                     <?php endif ?>
@@ -69,11 +69,11 @@ session_start();
                     <?php if ($_SESSION['logado'] == true && $_SESSION['user'] == 'admin'): ?>
                         <a class="nav-item dropdown" data-bs-toggle="dropdown"><i class="fa fa-user"></i></a>
                         <ul class="dropdown-menu text-center" style="background-color: #7e9680; border: none">
-                            <li><a class="dropdown-item" href="./cadastroBolo.php">Add Bolo <i
+                            <li><a class="dropdown-item" href="./cadastroBolo">Add Bolo <i
                                         class="fa fa-birthday-cake"></i></a></li>
-                            <li><a class="dropdown-item" href="./perfil.php">Configurações <i class="fa fa-gear"></i></a>
+                            <li><a class="dropdown-item" href="./perfil">Configurações <i class="fa fa-gear"></i></a>
                             </li>
-                            <li><a class="dropdown-item" href="./functions/logout.php">Deslogar <i
+                            <li><a class="dropdown-item" href="./functions/logout">Deslogar <i
                                         class="fa fa-sign-out"></i></a></li>
                         </ul>
                     <?php endif ?>
@@ -119,7 +119,7 @@ session_start();
                             </div>
                         </div>
                         <br /><br />
-                        <a href="./checkout.php" class="btn btn-success btn-block"
+                        <a href="./checkout" class="btn btn-success btn-block"
                             style="background-color: #2D3C33; border: #7e9680; color: #f3dbcf !important">Finalizar
                             Pedido</a>
                     </div>
@@ -135,10 +135,10 @@ session_start();
         <div class="container1">
             <div class="row row-cols-5 text-center">
                 <a href="./" class="btn_header">Home</a>
-                <a href="./produtos.php" class="btn_header">Produtos</a>
-                <a><img href="./index.php" src="./assets/logo.png" style="height: 200px;"></img></a>
-                <a href="./quemsomos.php" class="btn_header">Quem Somos</a>
-                <a href="./contato.php" class="btn_header">Contato</a>
+                <a href="./produtos" class="btn_header">Produtos</a>
+                <a><img href="./index" src="./assets/logo.png" style="height: 200px;"></img></a>
+                <a href="./quemsomos" class="btn_header">Quem Somos</a>
+                <a href="./contato" class="btn_header">Contato</a>
             </div>
         </div>
     </div>
