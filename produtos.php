@@ -182,11 +182,11 @@
                         <li class="page-item disabled">
                             <a class="page-link" href="#" tabindex="-1" aria-disabled="true">&lt;</a>
                         </li>
-                        <li class="page-item active"><a class="page-link" href="./produtos.html">1</a></li>
+                        <li class="page-item active"><a class="page-link" href="./produtos">1</a></li>
                         <li class="page-item" aria-current="page">
                             <a class="page-link" href="./produtos?page=2">2</a>
                         </li>
-                        <li class="page-item"><a class="page-link" href="./produtos?page=3.html">3</a></li>
+                        <li class="page-item"><a class="page-link" href="./produtos?page=3">3</a></li>
                         <li class="page-item">
                             <a class="page-link" href="./produtos?page=2">&gt;</a>
                         </li>
