@@ -19,10 +19,9 @@
                 <br />
 
                 <form action="./functions/log.php" method="post">
-                    <input type="email" class="form-control form-rounded" id="form_email" name="email"
-                        placeholder="E-mail">
+                    <input type="email" class="form-control form-rounded" id="email" name="email" placeholder="E-mail">
                     <br /><br />
-                    <input type="password" class="form-control form-rounded" id="form_password" name="password"
+                    <input type="password" class="form-control form-rounded" id="senha" name="password"
                         placeholder="Senha">
                     <br />
                     <div class="col" style="text-align: start; padding-left: 1rem;">

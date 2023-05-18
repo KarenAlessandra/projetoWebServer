@@ -1,8 +1,6 @@
 <?php
 session_start();
 
-// $name = $register = $email = $senha = $senhaConfirmada = "";
-
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST["name"]) && isset($_POST["register"]) && isset($_POST["email"]) && isset($_POST["senha"]) && isset($_POST["senhaConfirmada"])) {
         $name = filter_var($_POST["name"], FILTER_SANITIZE_STRING);
@@ -25,23 +23,34 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $error = 'As senhas não conferem';
         echo $error;
     } else {
-        //database code here soon
-        sleep(2);
-        echo 'Usuário cadastrado com sucesso';
-        // header("Location: ../index.php");
+        $servername = "localhost";
+        $username = "root";
+        $password = "";
+        $dbname = "db_CakeShop";
+
+        $conn = mysqli_connect($servername, $username, $password, $dbname);
+        if (!$conn) {
+            die("Connection failed: " . mysqli_connect_error());
+        }
+
+        $hashed_password = password_hash($senha, PASSWORD_DEFAULT);
+
+        $sql = "INSERT INTO User (name, cpf, email, senha) VALUES (?, ?, ?, ?)";
+        $stmt = mysqli_prepare($conn, $sql);
+        mysqli_stmt_bind_param($stmt, "ssss", $name, $register, $email, $hashed_password);
+
+        if (mysqli_stmt_execute($stmt)) {
+            echo "Usuário cadastrado com sucesso";
+            sleep(2);
+            header("Location: ../index");
+            exit;
+        } else {
+            echo "Erro ao cadastrar usuário, tente novamente mais tarde.";
+        }
+
+        mysqli_stmt_close($stmt);
+        mysqli_close($conn);
     }
-
-    // hashing the password
-    $hashed_password = password_hash($senha, PASSWORD_DEFAULT);
-
-    // pending a database to store the data :p
-    // $pdo = new PDO("mysql:host=localhost;dbname=mydatabase", "name", "senha");
-    // $stmt = $pdo->prepare("INSERT INTO users (name, cpf, email, senha) VALUES (?, ?, ?, ?)");
-    // $stmt->execute([$name, $register, $email, $hashed_password]);
-
-    $_SESSION["email"] = $email;
-
-    header("Location: ./index.php");
 
     exit;
 }

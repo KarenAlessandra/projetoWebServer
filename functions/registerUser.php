@@ -22,10 +22,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         //database code here soon
         echo 'Usuário cadastrado com sucesso';
         sleep(2);
-        header("Location: ../index.php");
+        header("Location: ../index");
     }
 
-    // hashing the password
     $hashed_password = password_hash($senha, PASSWORD_DEFAULT);
 
     $sql = "INSERT INTO `User` (`NomeCompleto`, `Email`, `Cpf`, `Senha`, `Cep`, `Pais`, `Estado`, `Cidade`, `Bairro`, `Rua`, `Numero`, `Complemento`, `ID`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, NULL);";
@@ -35,7 +34,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $_SESSION["email"] = $email;
 
-    // header("Location: ./index.php");
+    sleep(2);
+    header("Location: ./index");
 
     exit;
 }

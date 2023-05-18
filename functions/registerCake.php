@@ -1,7 +1,6 @@
 <?php
 
 session_start();
-// require("../db/conection.php");
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
@@ -31,7 +30,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo $error;
     } else {
 
-        // Connect to the database
         $servername = "localhost";
         $username = "root";
         $password = "";
@@ -42,12 +40,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             die("Connection failed: " . mysqli_connect_error());
         }
 
-        // Prepare the SQL statement
         $sql = "INSERT INTO `Cake` (`Imagem`, `Preco`, `Titulo`, `Descricao`, `Peso`) VALUES (?, ?, ?, ?, ?)";
         $stmt = mysqli_prepare($conn, $sql);
         mysqli_stmt_bind_param($stmt, "sdsss", $Imagem, $Preco, $Titulo, $Descricao, $Peso);
 
-        // Execute the SQL statement
         if (mysqli_stmt_execute($stmt)) {
             echo "Bolo cadastrado com sucesso!";
             sleep(2);
@@ -56,7 +52,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             echo "Erro ao cadastrar o bolo, tente novamente mais tarde.";
         }
 
-        // Close the statement and database connection
         mysqli_stmt_close($stmt);
         mysqli_close($conn);
     }
