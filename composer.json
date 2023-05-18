@@ -1,5 +1,18 @@
 {
+    "name": "karen/projeto-web-server",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Karen",
+            "email": "20971247+KarenAlessandra@users.noreply.github.com"
+        }
+    ],
+    "autoload": {
+        "classmap": [
+            "./"
+        ]
+    },
     "require": {
-        "monolog/monolog": "2.5.5"
+        "pecee/simple-router": "5.3.0.5"
     }
 }

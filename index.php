@@ -1,13 +1,21 @@
-<!-- pra abrir com o http-server-->
-<!-- ./node_modules/.bin/http-server -a localhost -p 8000 -c-1 -->
-
 <!doctype html>
 <html lang="en">
 
 <head>
     <?php
+    // require 'vendor/autoload.php';
+    
+    // use Pecee\SimpleRouter\SimpleRouter as Router;
+    
+    // Router::get('/ping', function () {
+    //     echo '<h1>pong<\h1>';
+    // });
+    
+    // Router::start();
+    
     include("header.php");
     ?>
+
 </head>
 
 <body>

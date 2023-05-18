@@ -50,38 +50,34 @@ session_start();
                     <?php endif; ?>
 
                     <!-- if user client is logged in -->
-                    <?php if ($_SESSION['logado'] == true && isset($_SESSION['user']) == 'user'): ?>
+                    <?php if ($_SESSION['logado'] == true && $_SESSION['user'] == 'user'): ?>
                         <a class="nav-item dropdown" data-bs-toggle="dropdown"><i class="fa fa-user"></i></a>
                         <ul class="dropdown-menu text-center" style="background-color: #7e9680; border: none">
-                            <li><a class="dropdown-item" href="./cadastroBolo.php">Add Bolo <i
-                                        class="fa fa-birthday-cake"></i></a></li>
 
-                            <!-- como não esta funcionando a diferença entre user e admin -->
+                            <!-- corrected condition for user-specific options -->
                             <li><a class="dropdown-item" href="./meusPedidos.php">Meus Pedidos <i
                                         class="fa fa-birthday-cake"></i></a></li>
-
 
                             <li><a class="dropdown-item" href="./perfil.php">Configurações <i class="fa fa-gear"></i></a>
                             </li>
                             <li><a class="dropdown-item" href="./functions/logout.php">Deslogar <i
-                                        class="fa fa-sign-out"></i></a>
-                            </li>
+                                        class="fa fa-sign-out"></i></a></li>
                         </ul>
                     <?php endif ?>
 
                     <!-- if user admin is logged in -->
-                    <!-- <?php if ($_SESSION['logado'] == true && isset($_SESSION['user']) == 'admin'): ?>
+                    <?php if ($_SESSION['logado'] == true && $_SESSION['user'] == 'admin'): ?>
                         <a class="nav-item dropdown" data-bs-toggle="dropdown"><i class="fa fa-user"></i></a>
                         <ul class="dropdown-menu text-center" style="background-color: #7e9680; border: none">
-                            <li><a class="dropdown-item" href="./meusPedidos.php">Meus Pedidos <i
+                            <li><a class="dropdown-item" href="./cadastroBolo.php">Add Bolo <i
                                         class="fa fa-birthday-cake"></i></a></li>
                             <li><a class="dropdown-item" href="./perfil.php">Configurações <i class="fa fa-gear"></i></a>
                             </li>
                             <li><a class="dropdown-item" href="./functions/logout.php">Deslogar <i
-                                        class="fa fa-sign-out"></i></a>
-                            </li>
+                                        class="fa fa-sign-out"></i></a></li>
                         </ul>
-                    <?php endif ?> -->
+                    <?php endif ?>
+
 
                 </li>
 
